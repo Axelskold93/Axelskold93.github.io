@@ -32,6 +32,12 @@ main {
     border: solid 1px blue;
     width: 100%;
 }
+
+.news-item{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 footer {
     border: solid 1px red;
     justify-content: space-evenly;

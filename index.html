@@ -33,7 +33,13 @@
                 </li> 
             </ol>
         </article>
-        <article id="news">News</article>
+        <article id="news">
+            <h2>News</h2>
+            <div v-for="newsItem in teamNews" class="news-item">
+                <h4>{{ newsItem.title }}</h4>
+                <p>{{ newsItem.description }}</p>
+            </div>
+        </article>
         <article id="highlights">Highlights</article>
     </main>
     <footer>
