@@ -16,22 +16,37 @@
     </header>
     <main>
         <article id="table">
+            <table>
             <h2>League Standings</h2>
-            <ol id="league-standings">
-                <li v-for="team in teams">
-                    <p id="team-name">{{ team.name }}</p>
-                    <ul>
-                        <li>Played: {{ team.matches_played }}</li>
-                        <li>Wins: {{ team.wins }}</li>
-                        <li>Draws: {{ team.draws }}</li>
-                        <li>Losses: {{ team.losses }}</li>
-                        <li>GF: {{ team.goals_for }}</li>
-                        <li>GA: {{ team.goals_against }}</li>
-                        <li>GD: {{ calculateGoalDifference(team) }}</li>
-                        <li>P: {{ calculatePoints(team) }}</li>
-                    </ul>
-                </li> 
-            </ol>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Wins</th>
+                    <th>Draws</th>
+                    <th>Losses</th>
+                    <th>Goals For</th>
+                    <th>Goals Against</th>
+                    <th>Goal Difference</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(team, index) in teams">
+                <td>{{index + 1}}</td>
+                <td>{{ team.name }}</td>
+                <td>{{ team.matches_played }}</td>
+                <td>{{ team.wins }}</td>
+                <td>{{ team.draws }}</td>
+                <td>{{ team.losses }}</td>
+                <td>{{ team.goals_for }}</td>
+                <td>{{ team.goals_against }}</td>
+                <td>{{ calculateGoalDifference(team) }}</td>
+                <td>{{ calculatePoints(team) }}</td>
+                </tr>
+            </tbody>
+        </table>
         </article>
         <article id="news">News</article>
         <article id="highlights">Highlights</article>
