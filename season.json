@@ -1,105 +1,566 @@
 {
-    "league": "Premier League",
-    "season": "2024/2025",
-    "teams": [
-      {
-        "name": "Red Dragons FC",
-        "matches_played": 18,
-        "wins": 14,
-        "draws": 2,
-        "losses": 2,
-        "goals_for": 40,
-        "goals_against": 12,
-        "points": 44
-      },
-      {
-        "name": "Green Eagles FC",
-        "matches_played": 18,
-        "wins": 12,
-        "draws": 4,
-        "losses": 2,
-        "goals_for": 35,
-        "goals_against": 15,
-        "points": 40
-      },
-      {
-        "name": "Silver Sharks FC",
-        "matches_played": 18,
-        "wins": 11,
-        "draws": 5,
-        "losses": 2,
-        "goals_for": 30,
-        "goals_against": 18,
-        "points": 38
-      },
-      {
-        "name": "Golden Falcons FC",
-        "matches_played": 18,
-        "wins": 10,
-        "draws": 3,
-        "losses": 5,
-        "goals_for": 25,
-        "goals_against": 20,
-        "points": 33
-      },
-      {
-        "name": "Blue Tigers FC",
-        "matches_played": 18,
-        "wins": 9,
-        "draws": 5,
-        "losses": 4,
-        "goals_for": 28,
-        "goals_against": 22,
-        "points": 32
-      },
-      {
-        "name": "Orange Bears FC",
-        "matches_played": 18,
-        "wins": 8,
-        "draws": 6,
-        "losses": 4,
-        "goals_for": 27,
-        "goals_against": 23,
-        "points": 30
-      },
-      {
-        "name": "White Wolves FC",
-        "matches_played": 18,
-        "wins": 7,
-        "draws": 7,
-        "losses": 4,
-        "goals_for": 22,
-        "goals_against": 18,
-        "points": 28
-      },
-      {
-        "name": "Black Panthers FC",
-        "matches_played": 18,
-        "wins": 6,
-        "draws": 5,
-        "losses": 7,
-        "goals_for": 20,
-        "goals_against": 25,
-        "points": 23
-      },
-      {
-        "name": "Purple Cobras FC",
-        "matches_played": 18,
-        "wins": 5,
-        "draws": 7,
-        "losses": 6,
-        "goals_for": 18,
-        "goals_against": 20,
-        "points": 22
-      },
-      {
-        "name": "Yellow Lions FC",
-        "matches_played": 18,
-        "wins": 4,
-        "draws": 6,
-        "losses": 8,
-        "goals_for": 15,
-        "goals_against": 30,
-        "points": 18
-      }
-    ]}
+  "league": "Premier League",
+  "season": "2024/2025",
+  "teams": [
+    {
+      "name": "Red Dragons FC",
+      "matches_played": 18,
+      "wins": 14,
+      "draws": 2,
+      "losses": 2,
+      "goals_for": 40,
+      "goals_against": 12,
+      "points": 44,
+      "players": [
+        {
+          "name": "John Smith",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "David Johnson",
+          "position": "Defender"
+        },
+        {
+          "name": "Michael Williams",
+          "position": "Defender"
+        },
+        {
+          "name": "Christopher Brown",
+          "position": "Midfielder"
+        },
+        {
+          "name": "James Wilson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Matthew Taylor",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Andrew Martinez",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Clark",
+          "position": "Forward"
+        },
+        {
+          "name": "Joshua Lee",
+          "position": "Forward"
+        },
+        {
+          "name": "Thomas Garcia",
+          "position": "Forward"
+        },
+        {
+          "name": "Benjamin Evans",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Green Eagles FC",
+      "matches_played": 18,
+      "wins": 12,
+      "draws": 4,
+      "losses": 2,
+      "goals_for": 35,
+      "goals_against": 15,
+      "points": 40,
+      "players": [
+        {
+          "name": "Adam Wilson",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Christopher Baker",
+          "position": "Defender"
+        },
+        {
+          "name": "Samuel Walker",
+          "position": "Defender"
+        },
+        {
+          "name": "Matthew Phillips",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Nathan King",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Benjamin Allen",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Aaron Wright",
+          "position": "Midfielder"
+        },
+        {
+          "name": "James Young",
+          "position": "Forward"
+        },
+        {
+          "name": "Oliver Harris",
+          "position": "Forward"
+        },
+        {
+          "name": "Kevin Rodriguez",
+          "position": "Forward"
+        },
+        {
+          "name": "Tyler Martinez",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Silver Sharks FC",
+      "matches_played": 18,
+      "wins": 11,
+      "draws": 5,
+      "losses": 2,
+      "goals_for": 30,
+      "goals_against": 18,
+      "points": 38,
+      "players": [
+        {
+          "name": "Christopher Smith",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "James Johnson",
+          "position": "Defender"
+        },
+        {
+          "name": "Jonathan Harris",
+          "position": "Defender"
+        },
+        {
+          "name": "Daniel Davis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Michael Wilson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Samuel Taylor",
+          "position": "Midfielder"
+        },
+        {
+          "name": "David Martinez",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Matthew Clark",
+          "position": "Forward"
+        },
+        {
+          "name": "Benjamin Lee",
+          "position": "Forward"
+        },
+        {
+          "name": "Thomas Allen",
+          "position": "Forward"
+        },
+        {
+          "name": "Joshua Turner",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Golden Falcons FC",
+      "matches_played": 18,
+      "wins": 10,
+      "draws": 3,
+      "losses": 5,
+      "goals_for": 25,
+      "goals_against": 20,
+      "points": 33,
+      "players": [
+        {
+          "name": "Joshua Anderson",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Christopher Taylor",
+          "position": "Defender"
+        },
+        {
+          "name": "Matthew Davis",
+          "position": "Defender"
+        },
+        {
+          "name": "James Phillips",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Moore",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Christopher Lewis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Benjamin Robinson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Joseph Hall",
+          "position": "Forward"
+        },
+        {
+          "name": "William Turner",
+          "position": "Forward"
+        },
+        {
+          "name": "Michael Scott",
+          "position": "Forward"
+        },
+        {
+          "name": "David Brown",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Blue Tigers FC",
+      "matches_played": 18,
+      "wins": 9,
+      "draws": 5,
+      "losses": 4,
+      "goals_for": 28,
+      "goals_against": 22,
+      "points": 32,
+      "players": [
+        {
+          "name": "Robert Anderson",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Ryan Taylor",
+          "position": "Defender"
+        },
+        {
+          "name": "Christopher Davis",
+          "position": "Defender"
+        },
+        {
+          "name": "Jonathan Rodriguez",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Tyler Moore",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Ethan Lewis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Robinson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "James Hall",
+          "position": "Forward"
+        },
+        {
+          "name": "William Turner",
+          "position": "Forward"
+        },
+        {
+          "name": "Joseph Scott",
+          "position": "Forward"
+        },
+        {
+          "name": "Nicholas Brown",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Orange Bears FC",
+      "matches_played": 18,
+      "wins": 8,
+      "draws": 6,
+      "losses": 4,
+      "goals_for": 27,
+      "goals_against": 23,
+      "points": 30,
+      "players": [
+        {
+          "name": "Daniel Johnson",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Christopher Adams",
+          "position": "Defender"
+        },
+        {
+          "name": "Samuel Thompson",
+          "position": "Defender"
+        },
+        {
+          "name": "Jonathan Hall",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Benjamin Turner",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Ethan Harris",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Matthew Young",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Thomas Martinez",
+          "position": "Forward"
+        },
+        {
+          "name": "James Garcia",
+          "position": "Forward"
+        },
+        {
+          "name": "Alexander Clark",
+          "position": "Forward"
+        },
+        {
+          "name": "Joshua Moore",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "White Wolves FC",
+      "matches_played": 18,
+      "wins": 7,
+      "draws": 7,
+      "losses": 4,
+      "goals_for": 22,
+      "goals_against": 18,
+      "points": 28,
+      "players": [
+        {
+          "name": "Alexander Smith",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "David Johnson",
+          "position": "Defender"
+        },
+        {
+          "name": "Michael Harris",
+          "position": "Defender"
+        },
+        {
+          "name": "Andrew Davis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "James Wilson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Taylor",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Christopher Martinez",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Matthew Clark",
+          "position": "Forward"
+        },
+        {
+          "name": "Benjamin Lee",
+          "position": "Forward"
+        },
+        {
+          "name": "Thomas Allen",
+          "position": "Forward"
+        },
+        {
+          "name": "Joshua Turner",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Black Panthers FC",
+      "matches_played": 18,
+      "wins": 6,
+      "draws": 5,
+      "losses": 7,
+      "goals_for": 20,
+      "goals_against": 25,
+      "points": 23,
+      "players": [
+        {
+          "name": "James Anderson",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Jonathan Taylor",
+          "position": "Defender"
+        },
+        {
+          "name": "Samuel Davis",
+          "position": "Defender"
+        },
+        {
+          "name": "Jonathan Phillips",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Benjamin Moore",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Christopher Lewis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Robinson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Joseph Hall",
+          "position": "Forward"
+        },
+        {
+          "name": "William Turner",
+          "position": "Forward"
+        },
+        {
+          "name": "Michael Scott",
+          "position": "Forward"
+        },
+        {
+          "name": "David Brown",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Purple Cobras FC",
+      "matches_played": 18,
+      "wins": 5,
+      "draws": 7,
+      "losses": 6,
+      "goals_for": 18,
+      "goals_against": 20,
+      "points": 22,
+      "players": [
+        {
+          "name": "Matthew Brown",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "David Anderson",
+          "position": "Defender"
+        },
+        {
+          "name": "Michael Walker",
+          "position": "Defender"
+        },
+        {
+          "name": "James Phillips",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Daniel Moore",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Christopher Lewis",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Benjamin Robinson",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Joseph Hall",
+          "position": "Forward"
+        },
+        {
+          "name": "William Turner",
+          "position": "Forward"
+        },
+        {
+          "name": "Michael Scott",
+          "position": "Forward"
+        },
+        {
+          "name": "David Brown",
+          "position": "Forward"
+        }
+      ]
+    },
+    {
+      "name": "Yellow Lions FC",
+      "matches_played": 18,
+      "wins": 4,
+      "draws": 6,
+      "losses": 8,
+      "goals_for": 15,
+      "goals_against": 30,
+      "points": 18,
+      "players": [
+        {
+          "name": "Daniel Brown",
+          "position": "Goalkeeper"
+        },
+        {
+          "name": "Michael Adams",
+          "position": "Defender"
+        },
+        {
+          "name": "Jacob Thompson",
+          "position": "Defender"
+        },
+        {
+          "name": "Ethan Hall",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Ethan Wright",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Ryan Harris",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Jack Young",
+          "position": "Midfielder"
+        },
+        {
+          "name": "Mason Walker",
+          "position": "Forward"
+        },
+        {
+          "name": "Noah Garcia",
+          "position": "Forward"
+        },
+        {
+          "name": "Matthew Clark",
+          "position": "Forward"
+        },
+        {
+          "name": "Christopher Moore",
+          "position": "Forward"
+        }
+      ]
+    }
+  ]
+}
