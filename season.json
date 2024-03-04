@@ -1,0 +1,105 @@
+{
+    "league": "Premier League",
+    "season": "2024/2025",
+    "teams": [
+      {
+        "name": "Red Dragons FC",
+        "matches_played": 18,
+        "wins": 14,
+        "draws": 2,
+        "losses": 2,
+        "goals_for": 40,
+        "goals_against": 12,
+        "points": 44
+      },
+      {
+        "name": "Green Eagles FC",
+        "matches_played": 18,
+        "wins": 12,
+        "draws": 4,
+        "losses": 2,
+        "goals_for": 35,
+        "goals_against": 15,
+        "points": 40
+      },
+      {
+        "name": "Silver Sharks FC",
+        "matches_played": 18,
+        "wins": 11,
+        "draws": 5,
+        "losses": 2,
+        "goals_for": 30,
+        "goals_against": 18,
+        "points": 38
+      },
+      {
+        "name": "Golden Falcons FC",
+        "matches_played": 18,
+        "wins": 10,
+        "draws": 3,
+        "losses": 5,
+        "goals_for": 25,
+        "goals_against": 20,
+        "points": 33
+      },
+      {
+        "name": "Blue Tigers FC",
+        "matches_played": 18,
+        "wins": 9,
+        "draws": 5,
+        "losses": 4,
+        "goals_for": 28,
+        "goals_against": 22,
+        "points": 32
+      },
+      {
+        "name": "Orange Bears FC",
+        "matches_played": 18,
+        "wins": 8,
+        "draws": 6,
+        "losses": 4,
+        "goals_for": 27,
+        "goals_against": 23,
+        "points": 30
+      },
+      {
+        "name": "White Wolves FC",
+        "matches_played": 18,
+        "wins": 7,
+        "draws": 7,
+        "losses": 4,
+        "goals_for": 22,
+        "goals_against": 18,
+        "points": 28
+      },
+      {
+        "name": "Black Panthers FC",
+        "matches_played": 18,
+        "wins": 6,
+        "draws": 5,
+        "losses": 7,
+        "goals_for": 20,
+        "goals_against": 25,
+        "points": 23
+      },
+      {
+        "name": "Purple Cobras FC",
+        "matches_played": 18,
+        "wins": 5,
+        "draws": 7,
+        "losses": 6,
+        "goals_for": 18,
+        "goals_against": 20,
+        "points": 22
+      },
+      {
+        "name": "Yellow Lions FC",
+        "matches_played": 18,
+        "wins": 4,
+        "draws": 6,
+        "losses": 8,
+        "goals_for": 15,
+        "goals_against": 30,
+        "points": 18
+      }
+    ]}
