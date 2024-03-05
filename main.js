@@ -9,6 +9,14 @@ Vue.createApp({
           this.teams = data.teams;
         })
 
+        fetch('./teamnews.json')
+        .then(response => {
+            return response.json(); 
+        })
+        .then(data => {
+            this.teamNews = data.team_news;
+        });
+
       },
       calculateGoalDifference(team) {
         return team.goals_for - team.goals_against;
@@ -22,7 +30,8 @@ Vue.createApp({
     },
     data() {
         return {
-          teams: []   
+          teams: [], 
+          teamNews: []  
         };
       },
 

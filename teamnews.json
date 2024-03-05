@@ -1,0 +1,29 @@
+{
+    "team_news": [
+        
+      {
+        "title": "Red Dragons FC Signs Star Forward",
+        "description": "Red Dragons FC has announced the signing of a prolific forward who is expected to strengthen their attacking lineup."
+      },
+      {
+        "title": "Injury Update: Key Player Returns to Training",
+        "description": "Good news for Red Dragons FC fans as their star midfielder has returned to training following a brief injury layoff."
+      },
+      {
+        "title": "Green Eagles FC Unveils New Stadium Plans",
+        "description": "Exciting times ahead for Green Eagles FC as the club reveals plans for a state-of-the-art stadium that will be the envy of the league."
+      },
+      {
+        "title": "Manager's Contract Extension Confirmed",
+        "description": "Green Eagles FC secures the services of their manager for another three years after an impressive season performance."
+      },
+      {
+        "title": "Youth Academy Graduates Shine in First Team Debut",
+        "description": "Silver Sharks FC's commitment to youth development pays off as two academy graduates impress in their debut match for the first team."
+      },
+      {
+        "title": "Club Captain Extends Contract",
+        "description": "Silver Sharks FC captain commits his future to the club by signing a contract extension, delighting fans and teammates alike."
+      }
+    ]
+  }
