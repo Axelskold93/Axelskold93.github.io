@@ -26,9 +26,34 @@ Vue.createApp({
        return team.wins * 3 + team.draws;
    },
    togglePlayersList(team) {
-    return team.showPlayersList = !team.showPlayersList;
+     team.showPlayersList = !team.showPlayersList;
+   },
+   selectPlayer (player) {
+    if (!this.playerOne.name) {
+      this.playerOne = player;
+    }
+    else if (!this.playerTwo.name) {
+      if (player.name === this.playerOne.name) {
+        alert("You cant compare the same player.")
+      }
+      else {
+        this.playerTwo = player;
+      }
+      
+    }
+    if (this.playerOne.name && this.playerTwo.name) {
+       this.playersChosen = true;
+    }
+   },
+   resetHeadToHead() {
+          this.playersChosen = false;
+          this.playerOne = {};
+          this.playerTwo = {};
+   },
+   goToHomePage() {
+    this.resetHeadToHead();
+    this.currentPage = 'home';
    }
-
 
     },
     computed: {
@@ -55,10 +80,15 @@ Vue.createApp({
       },
       topRedCards() {
         return this.getTopPlayers('red_cards');
-      }
+      },
+      
     },
     data() {
         return {
+          playersChosen: false,
+          playerOne: {},
+          playerTwo: {},
+          currentPage: 'home',
           teams: [], 
           teamNews: []  
         };

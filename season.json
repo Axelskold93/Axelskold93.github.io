@@ -1,9 +1,8 @@
 {
-  "league": "Premier League",
-  "season": "2024/2025",
+  
   "teams": [
     {
-      "name": "Red Dragons FC",
+      "name": "Empire FC",
       "matches_played": 18,
       "wins": 10,
       "draws": 4,
@@ -13,7 +12,7 @@
       "points": 34,
       "players": [
         {
-          "name": "John Smith",
+          "name": "Grand Admiral Thrawn",
           "position": "Goalkeeper",
           "clean_sheets": 5,
           "goals": 0,
@@ -22,7 +21,7 @@
           "red_cards": 0
         },
         {
-          "name": "David Johnson",
+          "name": "Grand Moff Tarkin",
           "position": "Defender",
           "goals": 3,
           "assists": 2,
@@ -30,7 +29,7 @@
           "red_cards": 0
         },
         {
-          "name": "Michael Williams",
+          "name": "Moff Gideon",
           "position": "Defender",
           "goals": 2,
           "assists": 1,
@@ -38,7 +37,7 @@
           "red_cards": 0
         },
         {
-          "name": "Christopher Brown",
+          "name": "Darth Sidious",
           "position": "Midfielder",
           "goals": 7,
           "assists": 3,
@@ -46,7 +45,7 @@
           "red_cards": 1
         },
         {
-          "name": "James Wilson",
+          "name": "Director Krennic",
           "position": "Midfielder",
           "goals": 4,
           "assists": 6,
@@ -54,7 +53,7 @@
           "red_cards": 0
         },
         {
-          "name": "Matthew Taylor",
+          "name": "Dave the Stormtrooper",
           "position": "Forward",
           "goals": 4,
           "assists": 14,
@@ -62,19 +61,19 @@
           "red_cards": 0
         },
         {
-          "name": "André Martinez",
+          "name": "Darth Vader",
           "position": "Forward",
           "goals": 9,
           "assists": 2,
           "yellow_cards": 2,
-          "red_cards": 0
+          "red_cards": 5
         }
       ],
       "showPlayersList": false
       
     },
     {
-      "name": "Green Eagles FC",
+      "name": "Rebels United",
       "matches_played": 18,
       "wins": 8,
       "draws": 4,
@@ -84,7 +83,7 @@
       "points": 28,
       "players": [
         {
-          "name": "Adam Wilson",
+          "name": "Yoda",
           "position": "Goalkeeper",
           "clean_sheets": 6,
           "goals": 0,
@@ -93,7 +92,7 @@
           "red_cards": 0
         },
         {
-          "name": "Christopher Baker",
+          "name": "Leia Organa",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -101,7 +100,7 @@
           "red_cards": 0
         },
         {
-          "name": "Samuel Walker",
+          "name": "Chewbacca",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -109,7 +108,7 @@
           "red_cards": 0
         },
         {
-          "name": "Matthew Phillips",
+          "name": "Obi-Wan Kenobi",
           "position": "Midfielder",
           "goals": 4,
           "assists": 3,
@@ -117,7 +116,7 @@
           "red_cards": 0
         },
         {
-          "name": "Nathan King",
+          "name": "Han Solo",
           "position": "Midfielder",
           "goals": 4,
           "assists": 4,
@@ -125,7 +124,7 @@
           "red_cards": 0
         },
         {
-          "name": "Benjamin Allen",
+          "name": "Luke Skywalker",
           "position": "Forward",
           "goals": 10,
           "assists": 9,
@@ -133,7 +132,7 @@
           "red_cards": 0
         },
         {
-          "name": "Aaron Wright",
+          "name": "Admiral Ackbar",
           "position": "Forward",
           "goals": 5,
           "assists": 7,
@@ -212,7 +211,7 @@
       ]
     },
     {
-      "name": "Golden Falcons FC",
+      "name": "Mordor City",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -222,7 +221,7 @@
       "points": 27,
       "players": [
         {
-          "name": "Joshua Anderson",
+          "name": "Mouth of Sauron",
           "position": "Goalkeeper",
           "clean_sheets": 3,
           "goals": 0,
@@ -231,7 +230,7 @@
           "red_cards": 0
         },
         {
-          "name": "Christopher Taylor",
+          "name": "Witch-King of Angmar",
           "position": "Defender",
           "goals": 1,
           "assists": 2,
@@ -239,7 +238,7 @@
           "red_cards": 0
         },
         {
-          "name": "Matthew Davids",
+          "name": "Lurtz",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -247,7 +246,7 @@
           "red_cards": 0
         },
         {
-          "name": "James Phillips",
+          "name": "Balrog of Moria",
           "position": "Midfielder",
           "goals": 3,
           "assists": 3,
@@ -255,7 +254,7 @@
           "red_cards": 0
         },
         {
-          "name": "Daniel Moore",
+          "name": "Saruman",
           "position": "Midfielder",
           "goals": 4,
           "assists": 1,
@@ -263,7 +262,7 @@
           "red_cards": 1
         },
         {
-          "name": "Gabriel Wedin",
+          "name": "The Dark Lord Sauron",
           "position": "Forward",
           "goals": 10,
           "assists": 9,
@@ -271,7 +270,7 @@
           "red_cards": 0
         },
         {
-          "name": "Robin Smith",
+          "name": "Azog the Defiler",
           "position": "Forward",
           "goals": 9,
           "assists": 12,
@@ -281,7 +280,7 @@
       ]
     },
     {
-      "name": "Blue Tigers FC",
+      "name": "Fellowship United",
       "matches_played": 18,
       "wins": 8,
       "draws": 2,
@@ -291,7 +290,7 @@
       "points": 26,
       "players": [
         {
-          "name": "Ryan Pattinson",
+          "name": "Elrond",
           "position": "Goalkeeper",
           "clean_sheets": 2,
           "goals": 0,
@@ -300,7 +299,7 @@
           "red_cards": 0
         },
         {
-          "name": "Ryan Thompson",
+          "name": "Boromir",
           "position": "Defender",
           "goals": 1,
           "assists": 2,
@@ -308,7 +307,7 @@
           "red_cards": 0
         },
         {
-          "name": "Mark Markson",
+          "name": "Gimli",
           "position": "Defender",
           "goals": 0,
           "assists": 3,
@@ -316,7 +315,7 @@
           "red_cards": 0
         },
         {
-          "name": "John Garcia",
+          "name": "Gandalf",
           "position": "Midfielder",
           "goals": 2,
           "assists": 3,
@@ -324,7 +323,7 @@
           "red_cards": 0
         },
         {
-          "name": "Tyler Brown",
+          "name": "Frodo",
           "position": "Midfielder",
           "goals": 3,
           "assists": 12,
@@ -332,7 +331,7 @@
           "red_cards": 0
         },
         {
-          "name": "Ethan Clark",
+          "name": "Aragorn",
           "position": "Forward",
           "goals": 5,
           "assists": 7,
@@ -340,7 +339,7 @@
           "red_cards": 1
         },
         {
-          "name": "Dani Martinez",
+          "name": "Legolas",
           "position": "Forward",
           "goals": 16,
           "assists": 0,
@@ -350,7 +349,7 @@
       ]
     },
     {
-      "name": "Orange Bears FC",
+      "name": "Stark FC",
       "matches_played": 18,
       "wins": 6,
       "draws": 4,
@@ -360,7 +359,7 @@
       "points": 22,
       "players": [
         {
-          "name": "Daniel Cooper",
+          "name": "Ned Stark",
           "position": "Goalkeeper",
           "clean_sheets": 3,
           "goals": 0,
@@ -369,7 +368,7 @@
           "red_cards": 0
         },
         {
-          "name": "Adam White",
+          "name": "Rob Stark",
           "position": "Defender",
           "goals": 1,
           "assists": 2,
@@ -377,7 +376,7 @@
           "red_cards": 0
         },
         {
-          "name": "Samuel Toolins",
+          "name": "Benjen Stark",
           "position": "Defender",
           "goals": 0,
           "assists": 2,
@@ -385,7 +384,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jay Hall",
+          "name": "Bran Stark",
           "position": "Midfielder",
           "goals": 2,
           "assists": 4,
@@ -393,7 +392,7 @@
           "red_cards": 0
         },
         {
-          "name": "Alex Smith",
+          "name": "Rickon Stark",
           "position": "Midfielder",
           "goals": 3,
           "assists": 4,
@@ -401,7 +400,7 @@
           "red_cards": 0
         },
         {
-          "name": "Carl Young",
+          "name": "Catelyn Stark",
           "position": "Forward",
           "goals": 8,
           "assists": 4,
@@ -409,7 +408,7 @@
           "red_cards": 0
         },
         {
-          "name": "Antonio Marquez",
+          "name": "Arya Stark",
           "position": "Forward",
           "goals": 8,
           "assists": 3,
@@ -419,7 +418,7 @@
       ]
     },
     {
-      "name": "White Wolves FC",
+      "name": "Lannister FC",
       "matches_played": 18,
       "wins": 6,
       "draws": 2,
@@ -429,7 +428,7 @@
       "points": 20,
       "players": [
         {
-          "name": "Alexander Mitchell",
+          "name": "Tyrion Lannister",
           "position": "Goalkeeper",
           "clean_sheets": 5,
           "goals": 0,
@@ -438,7 +437,7 @@
           "red_cards": 0
         },
         {
-          "name": "David Peterson",
+          "name": "Jamie Lannister",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -446,7 +445,7 @@
           "red_cards": 2
         },
         {
-          "name": "Mike Johnson",
+          "name": "Tywin Lannister",
           "position": "Defender",
           "goals": 0,
           "assists": 2,
@@ -454,7 +453,7 @@
           "red_cards": 0
         },
         {
-          "name": "Andrew Adams",
+          "name": "Cersei Lannister",
           "position": "Midfielder",
           "goals": 3,
           "assists": 3,
@@ -462,7 +461,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jamie Wilson",
+          "name": "Joffrey Baratheon",
           "position": "Midfielder",
           "goals": 2,
           "assists": 9,
@@ -470,7 +469,7 @@
           "red_cards": 0
         },
         {
-          "name": "Dan Walker",
+          "name": "Tommen Baratheon",
           "position": "Forward",
           "goals": 6,
           "assists": 3,
@@ -478,7 +477,7 @@
           "red_cards": 0
         },
         {
-          "name": "Geoffrey Prowse",
+          "name": "Lancel Lannister",
           "position": "Forward",
           "goals": 6,
           "assists": 4,
@@ -488,7 +487,7 @@
       ]
     },
     {
-      "name": "Black Panthers FC",
+      "name": "Gryffindor Rovers",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -498,7 +497,7 @@
       "points": 27,
       "players": [
         {
-          "name": "Robin Roberts",
+          "name": "Minerva McGonagall",
           "position": "Goalkeeper",
           "clean_sheets": 2,
           "goals": 0,
@@ -507,7 +506,7 @@
           "red_cards": 0
         },
         {
-          "name": "Xavier Roberto",
+          "name": "Ginny Weasley",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -515,7 +514,7 @@
           "red_cards": 0
         },
         {
-          "name": "Malik Carter",
+          "name": "Ron Weasley",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -523,7 +522,7 @@
           "red_cards": 1
         },
         {
-          "name": "Emile Smith",
+          "name": "Fred Weasley",
           "position": "Midfielder",
           "goals": 2,
           "assists": 3,
@@ -531,7 +530,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jordan Williams",
+          "name": "George Weasley",
           "position": "Midfielder",
           "goals": 3,
           "assists": 3,
@@ -539,7 +538,7 @@
           "red_cards": 0
         },
         {
-          "name": "Tyler Rooney",
+          "name": "Harry Potter",
           "position": "Forward",
           "goals": 5,
           "assists": 4,
@@ -547,7 +546,7 @@
           "red_cards": 2
         },
         {
-          "name": "Brandon Kempins",
+          "name": "Hermione Granger",
           "position": "Forward",
           "goals": 8,
           "assists": 8,
@@ -557,7 +556,7 @@
       ]
     },
     {
-      "name": "Purple Cobras FC",
+      "name": "Slytherin Albion",
       "matches_played": 18,
       "wins": 6,
       "draws": 4,
@@ -567,7 +566,7 @@
       "points": 22,
       "players": [
         {
-          "name": "Dylan Rodriguez",
+          "name": "Vincent Crabbe",
           "position": "Goalkeeper",
           "clean_sheets": 3,
           "goals": 0,
@@ -576,7 +575,7 @@
           "red_cards": 0
         },
         {
-          "name": "Baker Williams",
+          "name": "Severus Snape",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -584,7 +583,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jack Patel",
+          "name": "Lucius Malfoy",
           "position": "Defender",
           "goals": 0,
           "assists": 2,
@@ -592,7 +591,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jordan Phillips",
+          "name": "Bellatrix Lestrange",
           "position": "Midfielder",
           "goals": 2,
           "assists": 1,
@@ -600,7 +599,7 @@
           "red_cards": 0
         },
         {
-          "name": "Caleb Cooper",
+          "name": "Lord Voldemort",
           "position": "Midfielder",
           "goals": 3,
           "assists": 6,
@@ -608,7 +607,7 @@
           "red_cards": 0
         },
         {
-          "name": "Mason Harris",
+          "name": "Draco Malfoy",
           "position": "Forward",
           "goals": 4,
           "assists": 2,
@@ -616,7 +615,7 @@
           "red_cards": 0
         },
         {
-          "name": "Noah Fury",
+          "name": "Gregory Goyle",
           "position": "Forward",
           "goals": 5,
           "assists": 4,
@@ -626,7 +625,7 @@
       ]
     },
     {
-      "name": "Yellow Lions FC",
+      "name": "Villains Athletic",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -636,7 +635,7 @@
       "points": 27,
       "players": [
         {
-          "name": "Liam Parker",
+          "name": "Hannibal Lecter",
           "position": "Goalkeeper",
           "clean_sheets": 2,
           "goals": 0,
@@ -645,7 +644,7 @@
           "red_cards": 0
         },
         {
-          "name": "Nathan Jones",
+          "name": "Michael Myers",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -653,7 +652,7 @@
           "red_cards": 0
         },
         {
-          "name": "Brian Jones",
+          "name": "Freddy Kreuger",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -661,7 +660,7 @@
           "red_cards": 0
         },
         {
-          "name": "Tyrese Omotoye",
+          "name": "Jason Vorhees",
           "position": "Midfielder",
           "goals": 3,
           "assists": 2,
@@ -669,7 +668,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jamie Searle",
+          "name": "Hans Landa",
           "position": "Midfielder",
           "goals": 2,
           "assists": 8,
@@ -677,7 +676,7 @@
           "red_cards": 1
         },
         {
-          "name": "Ollie Sully",
+          "name": "Hans Gruber",
           "position": "Forward",
           "goals": 6,
           "assists": 4,
@@ -685,7 +684,7 @@
           "red_cards": 0
         },
         {
-          "name": "Axel Shield",
+          "name": "The Joker",
           "position": "Forward",
           "goals": 8,
           "assists": 5,

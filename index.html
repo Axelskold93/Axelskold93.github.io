@@ -10,9 +10,10 @@
     </head>
     <body>
         <div id="app">
+            <div v-if="currentPage === 'home'">
             <header>
                 <h1 class="heading">FootballApp</h1>
-                <label> <button>Head2Head</button></label>
+                <button @click="currentPage = 'head2head'">Go to Head to Head</button>
             </header>
             <main>
                 <article id="table">
@@ -137,24 +138,106 @@
                 </article>
             </main>
             <footer>
-                <div class="head-to-head">
-                    <h1>Head to Head</h1>
-                    <h2>Choose two players and compare their stats!</h2>
-                    <p>Choose team:</p>
-                    <ul class="team-list">
-                        <li v-for="team in teams"> 
-                            <button @click="togglePlayersList(team)">
-                                {{ team.name }}
-                            </button>
-                            <ul v-if="team.showPlayersList">
-                                <li v-for="player in team.players">
-                                    {{ player.name }}
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                
             </footer>
+        </div>
+        <div v-if="currentPage === 'head2head'">
+            <div class="head-to-head">
+                <h1>Head to Head</h1>
+                <h2>Choose two players and compare their stats!</h2>
+                <p>Choose players:</p>
+                <ul class="team-list">
+                    <li v-for="team in teams"> 
+                        <button @click="togglePlayersList(team)">
+                            {{ team.name }}
+                        </button>
+                        <ul v-if="team.showPlayersList">
+                            <li v-for="player in team.players">
+                                <button @click="selectPlayer(player)">
+                                {{ player.name }} - {{ player.position }}
+                            </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button @click="resetHeadToHead();">Reset</button>
+                <button @click="currentPage = 'comparePlayers'" v-bind:disabled="!playersChosen">Compare players</button>
+                <button @click="goToHomePage();">Return to main page</button>
+                <h3>Chosen players:</h3>
+                <p>Player One: {{ playerOne.name }}</p>
+                <p>Player Two: {{ playerTwo.name }}</p>
+            </div>
+        </div>
+        <div v-if="currentPage === 'comparePlayers'">
+            <div class="playerOne">
+                <table>
+                    <h2>{{ playerOne.name }}</h2>
+                    <thead>
+                    <tr>
+                        
+                        <th>Position</th>
+                        <th v-if="playerOne.position === 'Goalkeeper'">Clean sheets</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                        <th>Yellow Cards</th>
+                        <th>Red Cards</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ playerOne.position }}</td>
+                            <td v-if="playerOne.position === 'Goalkeeper'"
+                            :class=" {highlight: playerOne.clean_sheets > playerTwo.clean_sheets}">
+                                {{playerOne.clean_sheets}}
+                            </td>
+                            <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{playerOne.goals}}</td>
+                            <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{playerOne.assists}}</td>
+                            <td>{{playerOne.yellow_cards}}</td>
+                            <td>{{playerOne.red_cards}}</td>
+                        
+
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="playerTwo">
+                <table>
+                    <h2> {{ playerTwo.name }}</h2>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th v-if="playerTwo.position === 'Goalkeeper'">Clean sheets</th>
+                            <th>Goals</th>
+                            <th>Assists</th>
+                            <th>Yellow Cards</th>
+                            <th>Red Cards</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >{{playerTwo.position}}</td>
+                                <td v-if="playerTwo.position === 'Goalkeeper'" 
+                                :class=" {highlight: playerTwo.clean_sheets > playerOne.clean_sheets}">
+                                    {{playerTwo.clean_sheets}}
+                                </td>
+                                <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{playerTwo.goals}}</td>
+                                <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{playerTwo.assists}}</td>
+                                <td>{{playerTwo.yellow_cards}}</td>
+                                <td>{{playerTwo.red_cards}}</td>
+                            
+    
+                                
+                            </tr>
+                        </tbody>
+                </table>
+
+            </div>
+            <button @click="goToHomePage();">Return to main page</button>
+
+                    
+        </div>
         </div>
     </body>
     <script src="main.js" defer></script>
