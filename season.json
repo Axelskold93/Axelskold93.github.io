@@ -142,7 +142,7 @@
       ]
     },
     {
-      "name": "Silver Sharks FC",
+      "name": "Gothams Finest",
       "matches_played": 18,
       "wins": 5,
       "draws": 5,
@@ -152,7 +152,7 @@
       "points": 20,
       "players": [
         {
-          "name": "Chris Smith",
+          "name": "Alfred",
           "position": "Goalkeeper",
           "clean_sheets": 4,
           "goals": 0,
@@ -161,7 +161,7 @@
           "red_cards": 0
         },
         {
-          "name": "James Johnson",
+          "name": "Rachel Dawes",
           "position": "Defender",
           "goals": 2,
           "assists": 2,
@@ -169,7 +169,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jonathan Harris",
+          "name": "James Gordon",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -177,7 +177,7 @@
           "red_cards": 0
         },
         {
-          "name": "Daniel Davis",
+          "name": "Lucius Fox",
           "position": "Midfielder",
           "goals": 2,
           "assists": 8,
@@ -185,7 +185,7 @@
           "red_cards": 0
         },
         {
-          "name": "Michael Wilson",
+          "name": "Catwoman",
           "position": "Midfielder",
           "goals": 4,
           "assists": 1,
@@ -193,7 +193,7 @@
           "red_cards": 0
         },
         {
-          "name": "Samuel Taylor",
+          "name": "Robin",
           "position": "Forward",
           "goals": 8,
           "assists": 4,
@@ -201,7 +201,7 @@
           "red_cards": 0
         },
         {
-          "name": "David Martinez",
+          "name": "Batman",
           "position": "Forward",
           "goals": 5,
           "assists": 6,

@@ -105,7 +105,6 @@ Vue.createApp({
 
       mounted() {
         this.fetchData();
-        this.sortTeamsByPoints();
     }
       
     }).mount('#app');
