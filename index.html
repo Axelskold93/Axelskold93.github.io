@@ -1,67 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FootballApp</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="app">
-        <header>
-        <h1 class="heading">FootballApp</h1>
-        <label> <button>Head2Head</button></label>
-    </header>
-    <main>
-        <article id="table">
-            <table>
-            <h2>League Standings</h2>
-            <thead>
-                <tr>
-                    <th>Position</th>
-                    <th>Team</th>
-                    <th>Played</th>
-                    <th>Wins</th>
-                    <th>Draws</th>
-                    <th>Losses</th>
-                    <th>Goals For</th>
-                    <th>Goals Against</th>
-                    <th>Goal Difference</th>
-                    <th>Points</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="(team, index) in teams">
-                <td>{{index + 1}}</td>
-                <td>{{ team.name }}</td>
-                <td>{{ team.matches_played }}</td>
-                <td>{{ team.wins }}</td>
-                <td>{{ team.draws }}</td>
-                <td>{{ team.losses }}</td>
-                <td>{{ team.goals_for }}</td>
-                <td>{{ team.goals_against }}</td>
-                <td>{{ calculateGoalDifference(team) }}</td>
-                <td>{{ calculatePoints(team) }}</td>
-                </tr>
-            </tbody>
-        </table>
-        </article>
-        <article id="news">
-            <h2>News</h2>
-            <div v-for="newsItem in teamNews" class="news-item">
-                <h4>{{ newsItem.title }}</h4>
-                <p>{{ newsItem.description }}</p>
-            </div>
-        </article>
-        <article id="highlights">Highlights</article>
-    </main>
-    <footer>
-        <p id="creators">Created by Axel and Gabriel</p>
-    </footer>
-    </div>
-</body>
-<script src="main.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FootballApp</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <h1 class="heading">FootballApp</h1>
+                <label> <button>Head2Head</button></label>
+            </header>
+            <main>
+                <article id="table">
+                    <table>
+                        <h2>League Standings</h2>
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Team</th>
+                                <th>Played</th>
+                                <th>Wins</th>
+                                <th>Draws</th>
+                                <th>Losses</th>
+                                <th>Goals For</th>
+                                <th>Goals Against</th>
+                                <th>Goal Difference</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(team, index) in teams">
+                                <td>{{index + 1}}</td>
+                                <td>{{ team.name }}</td>
+                                <td>{{ team.matches_played }}</td>
+                                <td>{{ team.wins }}</td>
+                                <td>{{ team.draws }}</td>
+                                <td>{{ team.losses }}</td>
+                                <td>{{ team.goals_for }}</td>
+                                <td>{{ team.goals_against }}</td>
+                                <td>{{ calculateGoalDifference(team) }}</td>
+                                <td>{{ calculatePoints(team) }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article id="news">
+                    <h2>News</h2>
+                    <div v-for="newsItem in teamNews" class="news-item">
+                        <h4>{{ newsItem.title }}</h4>
+                        <p>{{ newsItem.description }}</p>
+                    </div>
+                </article>
+                <article id="highlights">
+                    <h2>Goal Scorers</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player Name</th>
+                                <th>Team</th>
+                                <th>Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(player, index) in topScorers">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ player.name }}</td>
+                                <td>{{ player.team }}</td>
+                                <td>{{ player.goals }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Assist Providers</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player Name</th>
+                                <th>Team</th>
+                                <th>Assists</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(player, index) in topAssists">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ player.name }}</td>
+                                <td>{{ player.team }}</td>
+                                <td>{{ player.assists }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Most Yellow Cards</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player Name</th>
+                                <th>Team</th>
+                                <th>Yellow Cards</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(player, index) in topYellowCards">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ player.name }}</td>
+                                <td>{{ player.team }}</td>
+                                <td>{{ player.yellow_cards }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Most Red Cards</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player Name</th>
+                                <th>Team</th>
+                                <th>Red Cards</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(player, index) in topRedCards">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ player.name }}</td>
+                                <td>{{ player.team }}</td>
+                                <td>{{ player.red_cards }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </main>
+            <footer>
+                <div class="head-to-head">
+                    <h1>Head to Head</h1>
+                    <h2>Choose two players and compare their stats!</h2>
+                    <p>Choose team:</p>
+                    <ul class="team-list">
+                        <li v-for="team in teams"> 
+                            <button @click="togglePlayersList(team)">
+                                {{ team.name }}
+                            </button>
+                            <ul v-if="team.showPlayersList">
+                                <li v-for="player in team.players">
+                                    {{ player.name }}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="main.js" defer></script>
 
 </html>
