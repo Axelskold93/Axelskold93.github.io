@@ -32,6 +32,30 @@ Vue.createApp({
 
     },
     computed: {
+      getTopPlayers() {
+        return (statistics) => {
+          return this.teams
+            .flatMap(team => team.players.map(player => ({
+              name: player.name,
+              team: team.name,
+              [statistics]: player[statistics] 
+            })))
+            .sort((a, b) => b[statistics] - a[statistics])
+            .slice(0, 5);
+        };
+      },
+      topScorers() {
+        return this.getTopPlayers('goals');
+      },
+      topAssists() {
+        return this.getTopPlayers('assists');
+      },
+      topYellowCards() {
+        return this.getTopPlayers('yellow_cards');
+      },
+      topRedCards() {
+        return this.getTopPlayers('red_cards');
+      }
     },
     data() {
         return {

@@ -50,6 +50,11 @@ td {
     margin-bottom: 20px;
 }
 
+#highlights table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 footer {
     border: solid 1px red;
     justify-content: space-evenly;
