@@ -7,6 +7,7 @@ Vue.createApp({
         })
         .then(data => {
           this.teams = data.teams;
+
         })
 
         fetch('./teamnews.json')
@@ -23,7 +24,11 @@ Vue.createApp({
    },
    calculatePoints(team) {
        return team.wins * 3 + team.draws;
+   },
+   togglePlayersList(team) {
+    return team.showPlayersList = !team.showPlayersList;
    }
+
 
     },
     computed: {

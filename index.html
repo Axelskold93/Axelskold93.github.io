@@ -12,7 +12,6 @@
     <div id="app">
         <header>
         <h1 class="heading">FootballApp</h1>
-        <label> <button>Head2Head</button></label>
     </header>
     <main>
         <article id="table">
@@ -58,7 +57,21 @@
         <article id="highlights">Highlights</article>
     </main>
     <footer>
-        <p id="creators">Created by Axel and Gabriel</p>
+        <div class="head-to-head">
+            <h1>Head to Head</h1>
+            <h2>Choose two players and compare their stats!</h2>
+            <p>Choose team:</p>
+            <ul class="team-list">
+                <li v-for="team in teams"> 
+                    <button @click="togglePlayersList(team)">
+                     {{ team.name }}</button>
+                <ul v-if="team.showPlayersList">
+                    <li v-for="player in team.players">{{ player.name }}</li>
+                </ul>
+            </li>
+
+            </ul>
+        </div>
     </footer>
     </div>
 </body>
