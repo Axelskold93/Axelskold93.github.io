@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="(team, index) in teams">
+                            <tr v-for="(team, index) in sortedTeams">
                                 <td>{{index + 1}}</td>
                                 <td>{{ team.name }}</td>
                                 <td>{{ team.matches_played }}</td>
@@ -51,10 +51,10 @@
                 </article>
                 <article id="news">
                     <h2>News</h2>
-                    <div v-for="newsItem in teamNews" class="news-item">
-                        <h4>{{ newsItem.title }}</h4>
-                        <p>{{ newsItem.description }}</p>
-                    </div>
+                    <div v-for="(newsItem, index) in teamNews" class="news-item">
+                        <a href="#" @click="toggleDescription(index)">{{ newsItem.title }}</a>
+                        <p v-if="showDescription[index]">{{ newsItem.description }}</p>
+                      </div>
                 </article>
                 <article id="highlights">
                     <h2>Goal Scorers</h2>

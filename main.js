@@ -24,7 +24,7 @@ Vue.createApp({
    },
    calculatePoints(team) {
        return team.wins * 3 + team.draws;
-   },
+   },    
    togglePlayersList(team) {
      team.showPlayersList = !team.showPlayersList;
    },
@@ -53,7 +53,10 @@ Vue.createApp({
    goToHomePage() {
     this.resetHeadToHead();
     this.currentPage = 'home';
-   }
+   },
+   toggleDescription(index) {
+    this.showDescription[index] = !this.showDescription[index];
+  }
 
     },
     computed: {
@@ -81,6 +84,11 @@ Vue.createApp({
       topRedCards() {
         return this.getTopPlayers('red_cards');
       },
+      sortedTeams() {
+        return this.teams.slice().sort((a, b) => {
+            return this.calculatePoints(b) - this.calculatePoints(a);
+        });
+    }
       
     },
     data() {
@@ -90,12 +98,14 @@ Vue.createApp({
           playerTwo: {},
           currentPage: 'home',
           teams: [], 
-          teamNews: []  
+          teamNews: [],
+          showDescription: [] 
         };
       },
 
       mounted() {
         this.fetchData();
+        this.sortTeamsByPoints();
     }
       
     }).mount('#app');

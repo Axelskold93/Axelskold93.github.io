@@ -1,29 +1,24 @@
 {
-    "team_news": [
-        
-      {
-        "title": "Red Dragons FC Signs Star Forward",
-        "description": "Red Dragons FC has announced the signing of a prolific forward who is expected to strengthen their attacking lineup."
-      },
-      {
-        "title": "Injury Update: Key Player Returns to Training",
-        "description": "Good news for Red Dragons FC fans as their star midfielder has returned to training following a brief injury layoff."
-      },
-      {
-        "title": "Green Eagles FC Unveils New Stadium Plans",
-        "description": "Exciting times ahead for Green Eagles FC as the club reveals plans for a state-of-the-art stadium that will be the envy of the league."
-      },
-      {
-        "title": "Manager's Contract Extension Confirmed",
-        "description": "Green Eagles FC secures the services of their manager for another three years after an impressive season performance."
-      },
-      {
-        "title": "Youth Academy Graduates Shine in First Team Debut",
-        "description": "Silver Sharks FC's commitment to youth development pays off as two academy graduates impress in their debut match for the first team."
-      },
-      {
-        "title": "Club Captain Extends Contract",
-        "description": "Silver Sharks FC captain commits his future to the club by signing a contract extension, delighting fans and teammates alike."
-      }
-    ]
-  }
+  "team_news": [
+    {
+      "title": "Empire FC Clinches Top Spot in League Standings",
+      "description": "Empire FC solidifies their position at the top of the league standings with a dominant performance in their latest match. Led by their star goalkeeper, Grand Admiral Thrawn, and formidable forward, Darth Vader, the team continues to showcase their prowess on the field."
+    },
+    {
+      "title": "Rebels United Stuns Rivals with Last-Minute Victory",
+      "description": "Rebels United leaves fans on the edge of their seats as they secure a dramatic victory in the dying moments of the game. With standout performances from midfield maestro Obi-Wan Kenobi and dynamic forward Luke Skywalker, the team proves their resilience and determination to succeed."
+    },
+    {
+      "title": "Fellowship United's Striker Legolas Named Player of the Month",
+      "description": "Fellowship United's prolific striker, Legolas, receives accolades as he is named Player of the Month for his outstanding contributions on the pitch. Known for his speed, skill, and clinical finishing, Legolas continues to be a vital asset for the team as they strive for success in the league."
+    },
+    {
+      "title": "Stark FC Battles Injuries to Maintain Mid-Table Position",
+      "description": "Stark FC faces adversity as key players like Ned Stark and Arya Stark are sidelined with injuries, forcing the team to adapt and persevere through challenging circumstances. Despite setbacks, the team's resilience and determination keep them competitive in the league standings."
+    },
+    {
+      "title": "Slytherin Albion Struggles to Find Consistency",
+      "description": "Slytherin Albion faces challenges as they struggle to find consistency in their performances throughout the season. With talented players like Draco Malfoy and Bellatrix Lestrange, the team has the potential to turn their fortunes around and make a push for a higher position in the standings."
+    }
+  ]
+}
