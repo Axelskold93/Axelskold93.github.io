@@ -12,11 +12,14 @@
         <div id="app">
             <div v-if="currentPage === 'home'">
             <header>
-                <h1 class="heading">FootballApp</h1>
-                <button @click="currentPage = 'head2head'">Go to Head to Head</button>
+                <h1 id="heading">FootballApp</h1>
+                <button id="headtohead" @click="currentPage = 'head2head'">Head to Head</button>
             </header>
+            <div id="team-icons">
+                <img v-for="team in teams" :src="team.icon" class="team-icon">
+            </div>
             <main>
-                <article id="table">
+                <article id="league-standings">
                     <table>
                         <h2>League Standings</h2>
                         <thead>
@@ -27,9 +30,9 @@
                                 <th>Wins</th>
                                 <th>Draws</th>
                                 <th>Losses</th>
-                                <th>Goals For</th>
-                                <th>Goals Against</th>
-                                <th>Goal Difference</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
                                 <th>Points</th>
                             </tr>
                         </thead>

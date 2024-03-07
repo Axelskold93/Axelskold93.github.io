@@ -2,7 +2,8 @@
   
   "teams": [
     {
-      "name": "Empire FC",
+      "icon": "team-icons/empire.png",
+      "name": "Empire Wanderers",
       "matches_played": 18,
       "wins": 10,
       "draws": 4,
@@ -73,6 +74,7 @@
       
     },
     {
+      "icon": "team-icons/rebel.png",
       "name": "Rebels United",
       "matches_played": 18,
       "wins": 8,
@@ -142,7 +144,8 @@
       ]
     },
     {
-      "name": "Silver Sharks FC",
+      "icon": "team-icons/avengers.png",
+      "name": "Avengers FC",
       "matches_played": 18,
       "wins": 5,
       "draws": 5,
@@ -152,7 +155,7 @@
       "points": 20,
       "players": [
         {
-          "name": "Chris Smith",
+          "name": "Captain America",
           "position": "Goalkeeper",
           "clean_sheets": 4,
           "goals": 0,
@@ -161,7 +164,7 @@
           "red_cards": 0
         },
         {
-          "name": "James Johnson",
+          "name": "Hulk",
           "position": "Defender",
           "goals": 2,
           "assists": 2,
@@ -169,7 +172,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jonathan Harris",
+          "name": "Thor",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -177,7 +180,7 @@
           "red_cards": 0
         },
         {
-          "name": "Daniel Davis",
+          "name": "Black Widow",
           "position": "Midfielder",
           "goals": 2,
           "assists": 8,
@@ -185,7 +188,7 @@
           "red_cards": 0
         },
         {
-          "name": "Michael Wilson",
+          "name": "Scarlet Witch",
           "position": "Midfielder",
           "goals": 4,
           "assists": 1,
@@ -193,7 +196,7 @@
           "red_cards": 0
         },
         {
-          "name": "Samuel Taylor",
+          "name": "Black Panther",
           "position": "Forward",
           "goals": 8,
           "assists": 4,
@@ -201,7 +204,7 @@
           "red_cards": 0
         },
         {
-          "name": "David Martinez",
+          "name": "Vision",
           "position": "Forward",
           "goals": 5,
           "assists": 6,
@@ -211,6 +214,7 @@
       ]
     },
     {
+      "icon": "team-icons/eyeofsauron.png",
       "name": "Mordor City",
       "matches_played": 18,
       "wins": 8,
@@ -280,7 +284,8 @@
       ]
     },
     {
-      "name": "Fellowship United",
+      "icon": "team-icons/ring.png",
+      "name": "Fellowship of the Ring",
       "matches_played": 18,
       "wins": 8,
       "draws": 2,
@@ -349,6 +354,7 @@
       ]
     },
     {
+      "icon": "team-icons/stark.png",
       "name": "Stark FC",
       "matches_played": 18,
       "wins": 6,
@@ -418,6 +424,7 @@
       ]
     },
     {
+      "icon": "team-icons/lannister.png",
       "name": "Lannister FC",
       "matches_played": 18,
       "wins": 6,
@@ -487,6 +494,7 @@
       ]
     },
     {
+      "icon": "team-icons/gryffindor.png",
       "name": "Gryffindor Rovers",
       "matches_played": 18,
       "wins": 8,
@@ -556,6 +564,7 @@
       ]
     },
     {
+      "icon": "team-icons/slytherin.png",
       "name": "Slytherin Albion",
       "matches_played": 18,
       "wins": 6,
@@ -625,7 +634,8 @@
       ]
     },
     {
-      "name": "Villains Athletic",
+      "icon": "team-icons/hydra.png",
+      "name": "MCU Villains",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -635,7 +645,7 @@
       "points": 27,
       "players": [
         {
-          "name": "Hannibal Lecter",
+          "name": "Loki",
           "position": "Goalkeeper",
           "clean_sheets": 2,
           "goals": 0,
@@ -644,7 +654,7 @@
           "red_cards": 0
         },
         {
-          "name": "Michael Myers",
+          "name": "Killmonger",
           "position": "Defender",
           "goals": 1,
           "assists": 0,
@@ -652,7 +662,7 @@
           "red_cards": 0
         },
         {
-          "name": "Freddy Kreuger",
+          "name": "Gorr the God Butcher",
           "position": "Defender",
           "goals": 0,
           "assists": 1,
@@ -660,7 +670,7 @@
           "red_cards": 0
         },
         {
-          "name": "Jason Vorhees",
+          "name": "Thanos",
           "position": "Midfielder",
           "goals": 3,
           "assists": 2,
@@ -668,7 +678,7 @@
           "red_cards": 0
         },
         {
-          "name": "Hans Landa",
+          "name": "Ultron",
           "position": "Midfielder",
           "goals": 2,
           "assists": 8,
@@ -676,7 +686,7 @@
           "red_cards": 1
         },
         {
-          "name": "Hans Gruber",
+          "name": "Hela",
           "position": "Forward",
           "goals": 6,
           "assists": 4,
@@ -684,7 +694,7 @@
           "red_cards": 0
         },
         {
-          "name": "The Joker",
+          "name": "The Winter Soldier",
           "position": "Forward",
           "goals": 8,
           "assists": 5,
