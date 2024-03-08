@@ -107,6 +107,15 @@ main {
     margin-bottom: 20px;
 }
 
+.news-item h4{
+    margin-bottom: 5px;
+}
+
+.news-icon {
+    width: 15px;
+    height: auto;
+}
+
 #highlights table {
     margin-top: 10px;
     margin-bottom: 20px;
