@@ -63,9 +63,7 @@ Vue.createApp({
     this.showComparison = !this.showComparison;
 
    },
-   toggleDescription(index) {
-    this.showDescription[index] = !this.showDescription[index];
-  }
+
 
     },
     computed: {
@@ -108,7 +106,7 @@ Vue.createApp({
           playerTwo: {},
           teams: [], 
           teamNews: [],
-          showDescription: [] 
+           
         };
       },
 
