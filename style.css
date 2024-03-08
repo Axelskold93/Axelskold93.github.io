@@ -3,20 +3,19 @@
     margin: 0;
     padding: 0;
 }
-@font-face {
-    font-family: footballFont;
-    src: url(footballfont.ttf);
-}
 
 body {
     /*background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);*/
-    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    background: #f9f9f9;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     /*background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);*/
+   
     display: grid;
     width: 100%;
     min-height: 100vh;
     background-color: #f9f9f9;
     align-items: stretch;
+    font-family: sans-serif;
 }
 header {
     display: flex;
@@ -24,17 +23,25 @@ header {
     justify-content: space-evenly;
     width: 100%;
     margin: 10px;
-    font-family: footballFont;
+    
+}
+#heading {
+    
 }
 #team-icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
 }
 .team-icon {
-    max-height: 50px;
+    max-height: 30px;
     margin: 5px;
+}
+.team-icon: {
+
 }
 button {
     border-radius: 12px;
@@ -59,8 +66,9 @@ main {
 #league-standings, #news, #highlights {
     width: 100%;
     margin: 5px;
+    height: 100%;
     
-    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background: #f9f9f9;
     border-radius: 5px;
     
 }
@@ -77,6 +85,7 @@ main {
 #news {
     flex: 2;
     padding: 5px;
+    
 }
 #highlights {
     flex: 1;
