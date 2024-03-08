@@ -50,9 +50,9 @@ Vue.createApp({
           this.playerOne = {};
           this.playerTwo = {};
    },
-   goToHomePage() {
-    this.resetHeadToHead();
-    this.currentPage = 'home';
+   toggleComparison () {
+    this.showComparison = !this.showComparison;
+
    },
    toggleDescription(index) {
     this.showDescription[index] = !this.showDescription[index];
@@ -93,10 +93,10 @@ Vue.createApp({
     },
     data() {
         return {
+          showComparison: false,
           playersChosen: false,
           playerOne: {},
           playerTwo: {},
-          currentPage: 'home',
           teams: [], 
           teamNews: [],
           showDescription: [] 

@@ -11,6 +11,7 @@ body {
     /*background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);*/
    
     display: grid;
+    
     width: 100%;
     min-height: 100vh;
     background-color: #f9f9f9;
@@ -35,12 +36,17 @@ header {
     justify-content: space-evenly;
     margin: 10px;
     padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
 }
 .team-icon {
     max-height: 30px;
     margin: 5px;
+    transition: transform 0.3s ease;
 }
-.team-icon: {
+.team-icon:hover {
+    transform: scale(1.3);
 
 }
 button {
@@ -57,41 +63,45 @@ button:focus {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    margin: 50px;
     
-    justify-content: space-evenly;
-    width: 100%;
+    
 }
-#league-standings, #news, #highlights {
+#league-standings, #news, .goals-assists, .cards, .head-to-head, #compare-players {
     width: 100%;
-    margin: 5px;
-    height: 100%;
     
+    height: 100%;
+    padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
     
 }
-#league-standings {
-    padding: 5px;
-    flex: 1;
+#league-standings table {
+    width: 100%;
+    height: 100%;
+    padding: 20px;   
 }
 #league-standings th, td {
     font-size: 15px;
-    padding: 5px;
-    text-align: center;
+    padding: 5px;   
 }
-
+.table-icon {
+    height: 10px;
+}
 #news {
     flex: 2;
     padding: 5px;
     
 }
-#highlights {
-    flex: 1;
-    padding: 5px;
-}
+.head-to-head {
+    
 
+}
 .news-item{
     margin-top: 10px;
     margin-bottom: 20px;
