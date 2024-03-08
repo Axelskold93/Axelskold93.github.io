@@ -58,8 +58,8 @@ button {
 button:hover {
     background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
 }
-button:focus {
-    background-color: green;
+button:active {
+    transform: scale(1.01);
 }
 
 main {
@@ -72,7 +72,7 @@ main {
     
     
 }
-#league-standings, #news, .goals-assists, .cards, .head-to-head, #compare-players {
+#league-standings, #news, .goals-assists, .cards, .head-to-head {
     width: 100%;
     
     height: 100%;
@@ -94,14 +94,52 @@ main {
     height: 10px;
 }
 #news {
-    flex: 2;
     padding: 5px;
     
 }
 .head-to-head {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+#headtohead-heading {
+    margin: 10px;
+    text-align: left;
 
 }
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column-gap: 10px;
+    
+}
+.team-list button, #player-list {
+    padding: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    max-width: 100%;
+    font-weight: bold;
+}
+#chosen-players {
+    margin: 20px;
+    padding: 10px;
+}
+#compare, #reset {
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    
+}
+
+
+
+
 .news-item{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -120,4 +158,5 @@ footer {
 }
 .highlight {
    background-color: green;
+   border-radius: 10px;
 }

@@ -148,11 +148,8 @@
                     </table>
                 </div>
                 <div class="head-to-head">
-                    <h1>Head to Head</h1>
-                    <h2>Choose two players and compare their stats!</h2>
-                    <h3>Chosen players:</h3>
-                <p>Player One: {{ playerOne.name }}</p>
-                <p>Player Two: {{ playerTwo.name }}</p>
+                    <h2 id="headtohead-heading">Head to Head</h2>
+                    <h3>Choose two players and compare their stats!</h3>
                     <ul class="team-list">
                         <li v-for="team in teams"> 
                             <button @click="togglePlayersList(team)">
@@ -160,77 +157,81 @@
                             </button>
                             <ul v-if="team.showPlayersList">
                                 <li v-for="player in team.players">
-                                    <button @click="selectPlayer(player)">
+                                    <button id="player-list" @click="selectPlayer(player)">
                                     {{ player.name }} - {{ player.position }}
                                 </button>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                    <button @click="toggleComparison();" v-bind:disabled="!playersChosen">Compare</button>
-                    <button @click="resetHeadToHead();">Reset</button>
-                    
-                </div>
-                <div id="compare-players" v-if="showComparison">
-                    <div class="playerOne">
-                        
-                        <table>
-                            <h2>{{ playerOne.name }}</h2>
-                            <thead>
-                            <tr> 
-                                <th>Position</th>
-                                <th v-if="playerOne.position === 'Goalkeeper'">Clean sheets</th>
-                                <th>Goals</th>
-                                <th>Assists</th>
-                                <th>Yellow Cards</th>
-                                <th>Red Cards</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{{ playerOne.position }}</td>
-                                    <td v-if="playerOne.position === 'Goalkeeper'"
-                                    :class=" {highlight: playerOne.clean_sheets > playerTwo.clean_sheets}">
-                                        {{playerOne.clean_sheets}}
-                                    </td>
-                                    <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{playerOne.goals}}</td>
-                                    <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{playerOne.assists}}</td>
-                                    <td>{{playerOne.yellow_cards}}</td>
-                                    <td>{{playerOne.red_cards}}</td>                                     
-                                </tr>
-                            </tbody>
-                        </table>
-        
+                    <div id="chosen-players">
+                    <h3>Chosen players:</h3>
+                    <p>Player One: {{ playerOne.name }}</p>
+                    <p>Player Two: {{ playerTwo.name }}</p>
                     </div>
-                    <div class="playerTwo">
-                        <table>
-                            <h2> {{ playerTwo.name }}</h2>
-                            <thead>
-                                <tr>
-                                    <th>Position</th>
-                                    <th v-if="playerTwo.position === 'Goalkeeper'">Clean sheets</th>
-                                    <th>Goals</th>
-                                    <th>Assists</th>
-                                    <th>Yellow Cards</th>
-                                    <th>Red Cards</th>
-                                </tr>
+                    <button id="compare" @click="toggleComparison();" v-bind:disabled="!playersChosen">Compare</button>
+                    <button id="reset" @click="resetHeadToHead();">Reset</button>
+                        
+                    <div id="compare-players" v-if="showComparison">
+                        <div class="playerOne">
+                            <h2>{{ playerOne.name }}</h2>
+                            <table>
+                                <thead>
+                                    <tr> 
+                                        <th>Position</th>
+                                        <th v-if="playerOne.position === 'Goalkeeper'">Clean sheets</th>
+                                        <th>Goals</th>
+                                        <th>Assists</th>
+                                        <th>Yellow Cards</th>
+                                        <th>Red Cards</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td >{{playerTwo.position}}</td>
-                                        <td v-if="playerTwo.position === 'Goalkeeper'" 
-                                        :class=" {highlight: playerTwo.clean_sheets > playerOne.clean_sheets}">
-                                            {{playerTwo.clean_sheets}}
+                                        <td>{{ playerOne.position }}</td>
+                                        <td v-if="playerOne.position === 'Goalkeeper'"
+                                        :class="{ highlight: playerOne.clean_sheets > playerTwo.clean_sheets }">
+                                            {{ playerOne.clean_sheets }}
                                         </td>
-                                        <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{playerTwo.goals}}</td>
-                                        <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{playerTwo.assists}}</td>
-                                        <td>{{playerTwo.yellow_cards}}</td>
-                                        <td>{{playerTwo.red_cards}}</td> 
+                                        <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{ playerOne.goals }}</td>
+                                        <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{ playerOne.assists }}</td>
+                                        <td>{{ playerOne.yellow_cards }}</td>
+                                        <td>{{ playerOne.red_cards }}</td>                                     
                                     </tr>
                                 </tbody>
-                        </table>
-        
+                            </table>
+                        </div>
+                        <div class="playerTwo">
+                            <h2>{{ playerTwo.name }}</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th v-if="playerTwo.position === 'Goalkeeper'">Clean sheets</th>
+                                        <th>Goals</th>
+                                        <th>Assists</th>
+                                        <th>Yellow Cards</th>
+                                        <th>Red Cards</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{ playerTwo.position }}</td>
+                                        <td v-if="playerTwo.position === 'Goalkeeper'" 
+                                        :class="{ highlight: playerTwo.clean_sheets > playerOne.clean_sheets }">
+                                            {{ playerTwo.clean_sheets }}
+                                        </td>
+                                        <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{ playerTwo.goals }}</td>
+                                        <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{ playerTwo.assists }}</td>
+                                        <td>{{ playerTwo.yellow_cards }}</td>
+                                        <td>{{ playerTwo.red_cards }}</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                </div>
+                
             </main>
             <footer>
                 <p>Made by Axel & Gabriel</p>

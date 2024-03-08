@@ -25,8 +25,13 @@ Vue.createApp({
    calculatePoints(team) {
        return team.wins * 3 + team.draws;
    },    
-   togglePlayersList(team) {
-     team.showPlayersList = !team.showPlayersList;
+   togglePlayersList(selectedTeam) {
+    this.teams.forEach(team => {
+      if (team !== selectedTeam ) {
+        team.showPlayersList = false;
+      }
+    });
+     selectedTeam.showPlayersList = !selectedTeam.showPlayersList;
    },
    selectPlayer (player) {
     if (!this.playerOne.name) {
@@ -49,6 +54,10 @@ Vue.createApp({
           this.playersChosen = false;
           this.playerOne = {};
           this.playerTwo = {};
+          this.teams.forEach(team => {
+            team.showPlayersList = false;
+          });
+          this.showComparison = false;
    },
    toggleComparison () {
     this.showComparison = !this.showComparison;
