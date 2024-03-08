@@ -103,8 +103,13 @@ main {
 
 }
 .news-item{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; 
+    padding: 20px 0; 
+    transition: background-color 0.3s;  
+}
+
+.news-item:hover {
+    background-color: #f0f0f0; 
 }
 
 .news-item h4{
@@ -114,6 +119,10 @@ main {
 .news-icon {
     width: 15px;
     height: auto;
+}
+
+#news .news-item:last-child {
+    border-bottom: none;
 }
 
 #highlights table {
