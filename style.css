@@ -97,8 +97,7 @@ main {
     height: 10px;
 }
 #news {
-    padding: 5px;
-    
+    padding: 0;
 }
 .head-to-head {
     grid-column: 1 / span 2;
@@ -161,8 +160,10 @@ main {
 
 .news-item{
     border-bottom: 1px solid #ccc; 
-    padding: 20px 0; 
-    transition: background-color 0.3s;  
+    padding: 20px;
+    transition: background-color 0.3s;
+    
+      
 }
 
 .news-item:hover {
@@ -170,22 +171,67 @@ main {
 }
 
 .news-item h4{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.news-icon {
+.news-icon, .player-icon {
     width: 15px;
     height: auto;
 }
 
-#news .news-item:last-child {
-    border-bottom: none;
-}
+
 
 #highlights table {
     margin-top: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
+
+.yellow-card-icon {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background-color: yellow;
+    margin-right: 5px; 
+    border-radius: 2px;
+}
+
+.red-card-icon {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background-color: red;
+    margin-right: 5px; 
+    border-radius: 2px;
+}
+
+.cards table {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.cards th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.goals-assists table {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.goals-assists th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+
+
+
+
 
 
 footer {
