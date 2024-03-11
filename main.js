@@ -58,10 +58,12 @@ Vue.createApp({
             team.showPlayersList = false;
           });
           this.showComparison = false;
+          this.comparisonMade = false;
    },
-   toggleComparison () {
+   toggleComparison() {
     this.showComparison = !this.showComparison;
-
+    this.comparisonMade = true;
+   
    },
 
 

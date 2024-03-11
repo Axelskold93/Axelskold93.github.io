@@ -13,7 +13,6 @@
             
             <header>
                 <h1 id="heading">FootFantasy</h1>
-                <button id="headtohead" @click="currentPage = 'head2head'">Head to Head</button>
             </header>
             <div id="team-icons">
             <div v-for="team in teams">
@@ -155,7 +154,8 @@
                     <ul class="team-list">
                         <li v-for="team in teams"> 
                             <button @click="togglePlayersList(team)">
-                                {{ team.name }}
+                                <img :src="team.icon" class="team-icon">
+                                  <p id="team-name">{{team.name}}</p>
                             </button>
                             <ul v-if="team.showPlayersList">
                                 <li v-for="player in team.players">
@@ -171,11 +171,11 @@
                     <p>Player One: {{ playerOne.name }}</p>
                     <p>Player Two: {{ playerTwo.name }}</p>
                     </div>
-                    <button id="compare" @click="toggleComparison();" v-bind:disabled="!playersChosen">Compare</button>
-                    <button id="reset" @click="resetHeadToHead();">Reset</button>
+                    <button id="compare" @click="toggleComparison(); togglePlayersList(selectedTeam); playersChosen = true" v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
+                    
                         
                     <div id="compare-players" v-if="showComparison">
-                        <div class="playerOne">
+                        <div class="player-one">
                             <h2>{{ playerOne.name }}</h2>
                             <table>
                                 <thead>
@@ -203,7 +203,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="playerTwo">
+                        <div class="player-two">
                             <h2>{{ playerTwo.name }}</h2>
                             <table>
                                 <thead>
@@ -232,7 +232,10 @@
                             </table>
                         </div>
                     </div>
+                    
+                    <button id="reset" @click="resetHeadToHead();">Reset</button>
                 </div>
+                
                 
             </main>
             <footer>
