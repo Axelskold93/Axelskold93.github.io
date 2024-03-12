@@ -1,265 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FootballApp</title>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="app">
-            
-            <header>
-                <h1 id="heading">FootFantasy</h1>
-            </header>
-            <div id="team-icons">
-                <div v-for="team in teams">
-                    <a @click="showHistory(team)">
-                        <img :src="team.icon" class="team-icon">
-                        <p id="team-name">{{ team.name }}</p>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="history-box" v-if="selectedTeam" @click="hideHistory">
-                    <em><p>{{ selectedTeam.history }}</p></em>
-                    </div>
-            </div>
-            <main>
-                <article id="league-standings">
-                    <table>
-                        <h2>League Standings</h2>
-                        <thead>
-                            <tr>
-                                <th>Position</th>
-                                <th>Team</th>
-                                <th>Played</th>
-                                <th>Wins</th>
-                                <th>Draws</th>
-                                <th>Losses</th>
-                                <th>GF</th>
-                                <th>GA</th>
-                                <th>GD</th>
-                                <th>Points</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(team, index) in sortedTeams">
-                                <td>{{index + 1}}</td>
-                                <td> 
-                                    <img :src="team.icon" alt="Team Icon" class="table-icon">
-                                    {{ team.name }}</td>
-                                <td>{{ team.matches_played }}</td>
-                                <td>{{ team.wins }}</td>
-                                <td>{{ team.draws }}</td>
-                                <td>{{ team.losses }}</td>
-                                <td>{{ team.goals_for }}</td>
-                                <td>{{ team.goals_against }}</td>
-                                <td>{{ calculateGoalDifference(team) }}</td>
-                                <td id="points">{{ calculatePoints(team) }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-                <article id="news">
-                    <h2>News</h2>
-                    <div v-for="(newsItem, index) in teamNews" class="news-item">
-                        <h4><img :src="teams.find(team => team.name === newsItem.team_name).icon" alt="Team Icon" class="news-icon">
-                            {{ newsItem.title }}
-                        </h4>
-                        <p><em>{{ newsItem.description }}</em></p>
-                      </div>
-                </article>
-                
-                    <div class="goals-assists">
-                    <h2>Goal Scorers</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Player</th>
-                                <th>Team</th>
-                                <th>G</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(player, index) in topScorers">
-                                <td>{{ index + 1 }}</td>
-                                <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
-                                <td>{{ player.goals }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootballApp</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-                    <h2>Assist Providers</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Player</th>
-                                <th>Team</th>
-                                <th>A</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(player, index) in topAssists">
-                                <td>{{ index + 1 }}</td>
-                                <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
-                                <td>{{ player.assists }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                    <div class="cards">
-                    <h2><span class="yellow-card-icon"></span>Yellow Cards</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Player</th>
-                                <th>Team</th>
-                                <th>Cards</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(player, index) in topYellowCards">
-                                <td>{{ index + 1 }}</td>
-                                <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
-                                <td>{{ player.yellow_cards }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+<body>
+    <div id="app">
 
-                    <h2><span class="red-card-icon"></span>Red Cards</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Player</th>
-                                <th>Team</th>
-                                <th>Cards</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="(player, index) in topRedCards">
-                                <td>{{ index + 1 }}</td>
-                                <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
-                                <td>{{ player.red_cards }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <header>
+            <h1 id="heading">FootFantasy</h1>
+        </header>
+        <div id="team-icons">
+            <div v-for="team in teams">
+                <a @click="showHistory(team)">
+                    <img :src="team.icon" class="team-icon">
+                    <p id="team-name">{{ team.name }}</p>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="history-box" v-if="selectedTeam" @click="hideHistory">
+                <em>
+                    <p>{{ selectedTeam.history }}</p>
+                </em>
+            </div>
+        </div>
+        <main>
+            <article id="league-standings">
+                <table>
+                    <h2>League Standings</h2>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Team</th>
+                            <th>Played</th>
+                            <th>Wins</th>
+                            <th>Draws</th>
+                            <th>Losses</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(team, index) in sortedTeams">
+                            <td>{{index + 1}}</td>
+                            <td>
+                                <img :src="team.icon" alt="Team Icon" class="table-icon">
+                                {{ team.name }}
+                            </td>
+                            <td>{{ team.matches_played }}</td>
+                            <td>{{ team.wins }}</td>
+                            <td>{{ team.draws }}</td>
+                            <td>{{ team.losses }}</td>
+                            <td>{{ team.goals_for }}</td>
+                            <td>{{ team.goals_against }}</td>
+                            <td>{{ calculateGoalDifference(team) }}</td>
+                            <td id="points">{{ calculatePoints(team) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="news">
+                <h2>News</h2>
+                <div v-for="(newsItem, index) in teamNews" class="news-item">
+                    <h4><img :src="teams.find(team => team.name === newsItem.team_name).icon" alt="Team Icon"
+                            class="news-icon">
+                        {{ newsItem.title }}
+                    </h4>
+                    <p><em>{{ newsItem.description }}</em></p>
                 </div>
-                <div class="head-to-head">
-                    <h2>Head to Head</h2>
-                    <h3>Choose two players and compare their stats!</h3>
-                    <ul class="team-list">
-                        <li v-for="team in teams"> 
-                            <button @click="togglePlayersList(team)">
-                                <img :src="team.icon" class="team-icon">
-                                  <p id="team-name">{{ team.name }}</p>
-                            </button>
-                            <ul class= "player-list" v-if="team.showPlayersList">
-                                <li v-for="player in team.players">
-                                    <button class="player-list" @click="selectPlayer(player)">
+            </article>
+
+            <div class="goals-assists">
+                <h2>Goal Scorers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>G</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(player, index) in topScorers">
+                            <td>{{ index + 1 }}</td>
+                            <td>{{ player.name }}</td>
+                            <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon"
+                                    class="player-icon">
+                                {{ player.team }}</td>
+                            <td>{{ player.goals }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Assist Providers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>A</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(player, index) in topAssists">
+                            <td>{{ index + 1 }}</td>
+                            <td>{{ player.name }}</td>
+                            <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon"
+                                    class="player-icon">
+                                {{ player.team }}</td>
+                            <td>{{ player.assists }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cards">
+                <h2><span class="yellow-card-icon"></span>Yellow Cards</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Cards</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(player, index) in topYellowCards">
+                            <td>{{ index + 1 }}</td>
+                            <td>{{ player.name }}</td>
+                            <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon"
+                                    class="player-icon">
+                                {{ player.team }}</td>
+                            <td>{{ player.yellow_cards }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2><span class="red-card-icon"></span>Red Cards</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Cards</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(player, index) in topRedCards">
+                            <td>{{ index + 1 }}</td>
+                            <td>{{ player.name }}</td>
+                            <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon"
+                                    class="player-icon">
+                                {{ player.team }}</td>
+                            <td>{{ player.red_cards }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="head-to-head">
+                <h2>Head to Head</h2>
+                <h3>Choose two players and compare their stats!</h3>
+                <ul class="team-list">
+                    <li v-for="team in teams">
+                        <button @click="togglePlayersList(team)">
+                            <img :src="team.icon" class="team-icon">
+                            <p id="team-name">{{ team.name }}</p>
+                        </button>
+                        <ul class="player-list" v-if="team.showPlayersList">
+                            <li v-for="player in team.players">
+                                <button class="player-list" @click="selectPlayer(player)">
                                     {{ player.name }} - {{ player.position }}
                                 </button>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div id="chosen-players">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="chosen-players">
                     <h3>Chosen players:</h3>
                     <p>Player One: {{ playerOne.name }}</p>
                     <p>Player Two: {{ playerTwo.name }}</p>
-                    </div>
-                    <button id="compare" @click="toggleComparison(); hideAllPlayers(); playersChosen = true" v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
-                    
-                        
-                    <div id="compare-players" v-if="showComparison">
-                        <div class="player-one">
-                            <h2>{{ playerOne.name }}</h2>
-                            <q class="player-bio"> {{ playerOne.bio }}</q>
-                            <table>
-                                <thead>
-                                    <tr> 
-                                        <th>Position</th>
-                                        <th v-if="playerOne.position === 'Goalkeeper'">Clean sheets</th>
-                                        <th>Goals</th>
-                                        <th>Assists</th>
-                                        <th>Yellow Cards</th>
-                                        <th>Red Cards</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>{{ playerOne.position }}</td>
-                                        <td v-if="playerOne.position === 'Goalkeeper'"
-                                        :class="{ highlight: playerOne.clean_sheets > playerTwo.clean_sheets }">
-                                            {{ playerOne.clean_sheets }}
-                                        </td>
-                                        <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{ playerOne.goals }}</td>
-                                        <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{ playerOne.assists }}</td>
-                                        <td>{{ playerOne.yellow_cards }}</td>
-                                        <td>{{ playerOne.red_cards }}</td>                                     
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="player-two">
-                            <h2>{{ playerTwo.name }}</h2>
-                            <q class="player-bio"> {{ playerTwo.bio }}</q>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Position</th>
-                                        <th v-if="playerTwo.position === 'Goalkeeper'">Clean sheets</th>
-                                        <th>Goals</th>
-                                        <th>Assists</th>
-                                        <th>Yellow Cards</th>
-                                        <th>Red Cards</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>{{ playerTwo.position }}</td>
-                                        <td v-if="playerTwo.position === 'Goalkeeper'" 
-                                        :class="{ highlight: playerTwo.clean_sheets > playerOne.clean_sheets }">
-                                            {{ playerTwo.clean_sheets }}
-                                        </td>
-                                        <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{ playerTwo.goals }}</td>
-                                        <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{ playerTwo.assists }}</td>
-                                        <td>{{ playerTwo.yellow_cards }}</td>
-                                        <td>{{ playerTwo.red_cards }}</td> 
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <button id="reset" @click="resetHeadToHead();">Reset</button>
                 </div>
-                
-                
-            </main>
-            <footer>
-                <p>Made by Axel & Gabriel</p>
-            </footer>
-        </div>
-        
-                    
-        </div>
-        </div>
-    </body>
-    <script src="main.js" defer></script>
+                <button id="compare" @click="toggleComparison(); hideAllPlayers(); playersChosen = true"
+                    v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
+
+
+                <div id="compare-players" v-if="showComparison">
+                    <div class="player-one">
+                        <h2>{{ playerOne.name }}</h2>
+                        <q class="player-bio"> {{ playerOne.bio }}</q>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Position</th>
+                                    <th v-if="playerOne.position === 'Goalkeeper'">Clean sheets</th>
+                                    <th>Goals</th>
+                                    <th>Assists</th>
+                                    <th>Yellow Cards</th>
+                                    <th>Red Cards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ playerOne.position }}</td>
+                                    <td v-if="playerOne.position === 'Goalkeeper'"
+                                        :class="{ highlight: playerOne.clean_sheets > playerTwo.clean_sheets }">
+                                        {{ playerOne.clean_sheets }}
+                                    </td>
+                                    <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{ playerOne.goals }}
+                                    </td>
+                                    <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{
+                                        playerOne.assists }}</td>
+                                    <td>{{ playerOne.yellow_cards }}</td>
+                                    <td>{{ playerOne.red_cards }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="player-two">
+                        <h2>{{ playerTwo.name }}</h2>
+                        <q class="player-bio"> {{ playerTwo.bio }}</q>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Position</th>
+                                    <th v-if="playerTwo.position === 'Goalkeeper'">Clean sheets</th>
+                                    <th>Goals</th>
+                                    <th>Assists</th>
+                                    <th>Yellow Cards</th>
+                                    <th>Red Cards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ playerTwo.position }}</td>
+                                    <td v-if="playerTwo.position === 'Goalkeeper'"
+                                        :class="{ highlight: playerTwo.clean_sheets > playerOne.clean_sheets }">
+                                        {{ playerTwo.clean_sheets }}
+                                    </td>
+                                    <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{ playerTwo.goals }}
+                                    </td>
+                                    <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{
+                                        playerTwo.assists }}</td>
+                                    <td>{{ playerTwo.yellow_cards }}</td>
+                                    <td>{{ playerTwo.red_cards }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <button id="reset" @click="resetHeadToHead();">Reset</button>
+            </div>
+
+
+        </main>
+        <footer>
+            <p>Made by Axel & Gabriel</p>
+        </footer>
+    </div>
+
+
+    </div>
+    </div>
+</body>
+<script src="main.js" defer></script>
 
 </html>
