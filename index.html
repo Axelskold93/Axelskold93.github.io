@@ -182,7 +182,7 @@
                     <p>Player One: {{ playerOne.name }}</p>
                     <p>Player Two: {{ playerTwo.name }}</p>
                     </div>
-                    <button id="compare" @click="toggleComparison(); togglePlayersList(selectedTeam); playersChosen = true" v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
+                    <button id="compare" @click="toggleComparison(); hideAllPlayers(); playersChosen = true" v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
                     
                         
                     <div id="compare-players" v-if="showComparison">

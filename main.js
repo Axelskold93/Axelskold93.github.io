@@ -33,6 +33,13 @@ Vue.createApp({
     });
      selectedTeam.showPlayersList = !selectedTeam.showPlayersList;
    },
+   hideAllPlayers() {
+    this.teams.forEach(team => {
+        team.showPlayersList = false;
+      
+    })
+
+   },
    selectPlayer (player) {
     if (!this.playerOne.name) {
       this.playerOne = player;
