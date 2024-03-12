@@ -94,7 +94,8 @@ main {
     border-bottom: 1px solid #ccc;
 }
 .table-icon {
-    height: 10px;
+    width: 15px;
+    height: auto;
 }
 #news {
     padding: 0;
@@ -123,6 +124,9 @@ main {
     width: 200px;
     max-width: 100%;
     font-weight: bold;
+}
+#player-list {
+    list-style-type: none;
 }
 #chosen-players {
     margin: 20px;

@@ -74,15 +74,14 @@
                                 <th>Rank</th>
                                 <th>Player Name</th>
                                 <th>Team</th>
-                                <th>G</th>
+                                <th>Goals</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topScorers">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
+                                <td>{{ player.team }}</td>
                                 <td>{{ player.goals }}</td>
                             </tr>
                         </tbody>
@@ -95,58 +94,55 @@
                                 <th>Rank</th>
                                 <th>Player Name</th>
                                 <th>Team</th>
-                                <th>A</th>
+                                <th>Assists</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topAssists">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
+                                <td>{{ player.team }}</td>
                                 <td>{{ player.assists }}</td>
                             </tr>
                         </tbody>
                     </table>
                     </div>
                     <div class="cards">
-                    <h2><span class="yellow-card-icon"></span>Yellow Cards</h2>
+                    <h2>Most Yellow Cards</h2>
                     <table>
                         <thead>
                             <tr>
                                 <th>Rank</th>
                                 <th>Player Name</th>
                                 <th>Team</th>
-                                <th>Cards</th>
+                                <th>Yellow Cards</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topYellowCards">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
+                                <td>{{ player.team }}</td>
                                 <td>{{ player.yellow_cards }}</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h2><span class="red-card-icon"></span>Red Cards</h2>
+                    <h2>Most Red Cards</h2>
                     <table>
                         <thead>
                             <tr>
                                 <th>Rank</th>
                                 <th>Player Name</th>
                                 <th>Team</th>
-                                <th>Cards</th>
+                                <th>Red Cards</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topRedCards">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
-                                    {{ player.team }}</td>
+                                <td>{{ player.team }}</td>
                                 <td>{{ player.red_cards }}</td>
                             </tr>
                         </tbody>
@@ -161,7 +157,7 @@
                                 <img :src="team.icon" class="team-icon">
                                   <p id="team-name">{{team.name}}</p>
                             </button>
-                            <ul v-if="team.showPlayersList">
+                            <ul id= "player-list" v-if="team.showPlayersList">
                                 <li v-for="player in team.players">
                                     <button id="player-list" @click="selectPlayer(player)">
                                     {{ player.name }} - {{ player.position }}
