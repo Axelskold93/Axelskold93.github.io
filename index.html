@@ -79,16 +79,17 @@
                         <thead>
                             <tr>
                                 <th>Rank</th>
-                                <th>Player Name</th>
+                                <th>Player</th>
                                 <th>Team</th>
-                                <th>Goals</th>
+                                <th>G</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topScorers">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td>{{ player.team }}</td>
+                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
+                                    {{ player.team }}</td>
                                 <td>{{ player.goals }}</td>
                             </tr>
                         </tbody>
@@ -99,57 +100,60 @@
                         <thead>
                             <tr>
                                 <th>Rank</th>
-                                <th>Player Name</th>
+                                <th>Player</th>
                                 <th>Team</th>
-                                <th>Assists</th>
+                                <th>A</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topAssists">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td>{{ player.team }}</td>
+                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
+                                    {{ player.team }}</td>
                                 <td>{{ player.assists }}</td>
                             </tr>
                         </tbody>
                     </table>
                     </div>
                     <div class="cards">
-                    <h2>Most Yellow Cards</h2>
+                    <h2><span class="yellow-card-icon"></span>Yellow Cards</h2>
                     <table>
                         <thead>
                             <tr>
                                 <th>Rank</th>
-                                <th>Player Name</th>
+                                <th>Player</th>
                                 <th>Team</th>
-                                <th>Yellow Cards</th>
+                                <th>Cards</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topYellowCards">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td>{{ player.team }}</td>
+                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
+                                    {{ player.team }}</td>
                                 <td>{{ player.yellow_cards }}</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h2>Most Red Cards</h2>
+                    <h2><span class="red-card-icon"></span>Red Cards</h2>
                     <table>
                         <thead>
                             <tr>
                                 <th>Rank</th>
-                                <th>Player Name</th>
+                                <th>Player</th>
                                 <th>Team</th>
-                                <th>Red Cards</th>
+                                <th>Cards</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(player, index) in topRedCards">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ player.name }}</td>
-                                <td>{{ player.team }}</td>
+                                <td><img :src="teams.find(team => team.name === player.team)?.icon" alt="Team Icon" class="player-icon">
+                                    {{ player.team }}</td>
                                 <td>{{ player.red_cards }}</td>
                             </tr>
                         </tbody>
