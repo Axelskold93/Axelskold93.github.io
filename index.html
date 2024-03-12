@@ -160,13 +160,13 @@
                     </table>
                 </div>
                 <div class="head-to-head">
-                    <h2 id="headtohead-heading">Head to Head</h2>
+                    <h2>Head to Head</h2>
                     <h3>Choose two players and compare their stats!</h3>
                     <ul class="team-list">
                         <li v-for="team in teams"> 
                             <button @click="togglePlayersList(team)">
                                 <img :src="team.icon" class="team-icon">
-                                  <p id="team-name">{ {team.name }}</p>
+                                  <p id="team-name">{{ team.name }}</p>
                             </button>
                             <ul id= "player-list" v-if="team.showPlayersList">
                                 <li v-for="player in team.players">
