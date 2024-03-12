@@ -4,6 +4,7 @@
     {
       "icon": "team-icons/empire.png",
       "name": "Empire Wanderers",
+      "history": "The Empire Wanderers football club, founded in a galaxy far, far away, has a rich tradition of dominance on the field. With a strong emphasis on discipline and tactical prowess, the Empire Wanderers have conquered numerous tournaments across the galaxy. Led by their formidable lineup of players, including Grand Admiral Thrawn, Grand Moff Tarkin, and Darth Sidious, the Empire Wanderers continue to strike fear into the hearts of their opponents.",
       "matches_played": 18,
       "wins": 10,
       "draws": 4,
@@ -83,6 +84,7 @@
     {
       "icon": "team-icons/rebel.png",
       "name": "Rebels United",
+      "history": "Rebels United, formed in defiance of oppressive regimes, represents the resilience and determination of those who fight for freedom. Despite facing overwhelming odds, the Rebels United football club has forged a legacy of courage and solidarity. Led by iconic figures like Yoda, Leia Organa, and Luke Skywalker, Rebels United embodies the spirit of resistance and hope, inspiring fans across the galaxy.",
       "matches_played": 18,
       "wins": 8,
       "draws": 4,
@@ -160,6 +162,7 @@
     {
       "icon": "team-icons/avengers.png",
       "name": "Avengers FC",
+      "history": "Assemble! Avengers FC is not just a football club; it's a force of nature. Drawing upon the extraordinary talents of its members, Avengers FC has emerged as a beacon of strength and heroism. With players like Captain America, Black Widow, and Black Panther leading the charge, Avengers FC defends the goal with unwavering resolve, ready to tackle any challenge that comes their way.",
       "matches_played": 18,
       "wins": 5,
       "draws": 5,
@@ -237,6 +240,7 @@
     {
       "icon": "team-icons/eyeofsauron.png",
       "name": "Mordor City",
+      "history": "From the depths of darkness rises Mordor City, a football club shrouded in shadow and mystery. Fueled by ambition and a thirst for power, Mordor City dominates the field with relentless determination. Led by the imposing presence of The Dark Lord Sauron and the cunning strategy of Saruman, Mordor City strikes fear into the hearts of its adversaries, forging a legacy of conquest and domination.",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -314,6 +318,7 @@
     {
       "icon": "team-icons/ring.png",
       "name": "Fellowship of the Ring",
+      "history": "One ring to rule them all, one team to conquer them all. The Fellowship of the Ring football club embarks on a quest for glory, united by friendship and a common purpose. With players like Gandalf, Aragorn, and Legolas leading the charge, the Fellowship of the Ring faces adversity with courage and resilience, forging a fellowship that transcends the boundaries of the pitch.",
       "matches_played": 18,
       "wins": 8,
       "draws": 2,
@@ -391,6 +396,7 @@
     {
       "icon": "team-icons/stark.png",
       "name": "Stark FC",
+      "history": "Winter is coming, but Stark FC remains undaunted. Hailing from the icy realms of the North, Stark FC embodies the resilience and fortitude of its namesake house. Led by stalwart leaders like Ned Stark and Arya Stark, Stark FC defends its territory with honor and determination, ready to face any challenge that comes its way.",
       "matches_played": 18,
       "wins": 6,
       "draws": 4,
@@ -468,6 +474,7 @@
     {
       "icon": "team-icons/lannister.png",
       "name": "Lannister FC",
+      "history": "A Lannister always pays his debts, and Lannister FC always delivers on the pitch. Known for their cunning tactics and ruthless ambition, Lannister FC strikes fear into the hearts of their opponents. Led by figures like Tyrion Lannister and Cersei Lannister, Lannister FC plays the game with calculated precision, ensuring victory at any cost.",
       "matches_played": 18,
       "wins": 6,
       "draws": 2,
@@ -545,6 +552,7 @@
     {
       "icon": "team-icons/gryffindor.png",
       "name": "Gryffindor Rovers",
+      "history": "For Gryffindor Rovers, the football pitch is their Hogwarts, and victory is their magic. Representing the courage and valor of Gryffindor House, Gryffindor Rovers plays with unwavering determination and spirit. With players like Harry Potter, Hermione Granger, and Ron Weasley leading the charge, Gryffindor Rovers embodies the noble ideals of bravery and camaraderie.",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
@@ -622,6 +630,7 @@
     {
       "icon": "team-icons/slytherin.png",
       "name": "Slytherin Albion",
+      "history": "Ambition knows no bounds for Slytherin Albion, a football club driven by cunning and ambition. Drawing upon the dark arts of the pitch, Slytherin Albion maneuvers its way to victory with ruthless efficiency. Led by figures like Severus Snape and Lord Voldemort, Slytherin Albion plays the game with calculated precision, ensuring that victory always belongs to the cunning.",
       "matches_played": 18,
       "wins": 6,
       "draws": 4,
@@ -699,6 +708,7 @@
     {
       "icon": "team-icons/hydra.png",
       "name": "MCU Villains",
+      "history": "From the shadows of the Marvel universe emerges MCU Villains, a football club fueled by chaos and villainy. With a roster of nefarious characters like Loki, Thanos, and Hela, MCU Villains wreak havoc on the pitch with their formidable skills and insidious strategies. Unleashing their dark powers, MCU Villains strike fear into the hearts of their adversaries, leaving a trail of destruction in their wake.",
       "matches_played": 18,
       "wins": 8,
       "draws": 3,
