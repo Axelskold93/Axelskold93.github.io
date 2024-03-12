@@ -168,9 +168,9 @@
                                 <img :src="team.icon" class="team-icon">
                                   <p id="team-name">{{ team.name }}</p>
                             </button>
-                            <ul id= "player-list" v-if="team.showPlayersList">
+                            <ul class= "player-list" v-if="team.showPlayersList">
                                 <li v-for="player in team.players">
-                                    <button id="player-list" @click="selectPlayer(player)">
+                                    <button class="player-list" @click="selectPlayer(player)">
                                     {{ player.name }} - {{ player.position }}
                                 </button>
                                 </li>

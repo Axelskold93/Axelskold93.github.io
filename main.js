@@ -1,139 +1,125 @@
 Vue.createApp({
-    methods: { 
-      fetchData() {
-        fetch ('./season.json')
-        .then (response => {
+  methods: {
+    fetchData() {
+      fetch('./season.json')
+        .then(response => {
           return response.json();
         })
         .then(data => {
           this.teams = data.teams;
-
         })
 
-        fetch('./teamnews.json')
+      fetch('./teamnews.json')
         .then(response => {
-            return response.json(); 
+          return response.json();
         })
         .then(data => {
-            this.teamNews = data.team_news;
+          this.teamNews = data.team_news;
         });
-
-      },
-      calculateGoalDifference(team) {
-        return team.goals_for - team.goals_against;
-   },
-   calculatePoints(team) {
-       return team.wins * 3 + team.draws;
-   },    
-   togglePlayersList(selectedTeam) {
-    this.teams.forEach(team => {
-      if (team !== selectedTeam ) {
+    },
+    calculateGoalDifference(team) {
+      return team.goals_for - team.goals_against;
+    },
+    calculatePoints(team) {
+      return team.wins * 3 + team.draws;
+    },
+    togglePlayersList(selectedTeam) {
+      this.teams.forEach(team => {
+        if (team !== selectedTeam) {
+          team.showPlayersList = false;
+        }
+      });
+      selectedTeam.showPlayersList = !selectedTeam.showPlayersList;
+    },
+    hideAllPlayers() {
+      this.teams.forEach(team => {
         team.showPlayersList = false;
+      })
+    },
+    selectPlayer(player) {
+      if (!this.playerOne.name) {
+        this.playerOne = player;
       }
-    });
-     selectedTeam.showPlayersList = !selectedTeam.showPlayersList;
-   },
-   hideAllPlayers() {
-    this.teams.forEach(team => {
+      else if (!this.playerTwo.name) {
+        if (player.name === this.playerOne.name) {
+          alert("You cant compare the same player.")
+        }
+        else {
+          this.playerTwo = player;
+        }
+      }
+      if (this.playerOne.name && this.playerTwo.name) {
+        this.playersChosen = true;
+      }
+    },
+    resetHeadToHead() {
+      this.playersChosen = false;
+      this.playerOne = {};
+      this.playerTwo = {};
+      this.teams.forEach(team => {
         team.showPlayersList = false;
-      
-    })
-
-   },
-   selectPlayer (player) {
-    if (!this.playerOne.name) {
-      this.playerOne = player;
-    }
-    else if (!this.playerTwo.name) {
-      if (player.name === this.playerOne.name) {
-        alert("You cant compare the same player.")
-      }
-      else {
-        this.playerTwo = player;
-      }
-      
-    }
-    if (this.playerOne.name && this.playerTwo.name) {
-       this.playersChosen = true;
-    }
-   },
-   resetHeadToHead() {
-          this.playersChosen = false;
-          this.playerOne = {};
-          this.playerTwo = {};
-          this.teams.forEach(team => {
-            team.showPlayersList = false;
-          });
-          this.showComparison = false;
-          this.comparisonMade = false;
-   },
-   toggleComparison() {
-    this.showComparison = !this.showComparison;
-    this.comparisonMade = true;
-   
-   },
-
-   showHistory(team) {
-    if (this.selectedTeam === team) {
-      
+      });
+      this.showComparison = false;
+      this.comparisonMade = false;
+    },
+    toggleComparison() {
+      this.showComparison = !this.showComparison;
+      this.comparisonMade = true;
+    },
+    showHistory(team) {
+      if (this.selectedTeam === team) {
         this.selectedTeam = null;
-    } else {
-        
+      } else {
         this.selectedTeam = team;
-    }
-},
+      }
+    },
     hideHistory() {
-    this.selectedTeam = null;
+      this.selectedTeam = null;
     }
-
+  },
+  computed: {
+    getTopPlayers() {
+      return (statistics) => {
+        return this.teams
+          .flatMap(team => team.players.map(player => ({
+            name: player.name,
+            team: team.name,
+            [statistics]: player[statistics]
+          })))
+          .sort((a, b) => b[statistics] - a[statistics])
+          .slice(0, 5);
+      };
     },
-    computed: {
-      getTopPlayers() {
-        return (statistics) => {
-          return this.teams
-            .flatMap(team => team.players.map(player => ({
-              name: player.name,
-              team: team.name,
-              [statistics]: player[statistics] 
-            })))
-            .sort((a, b) => b[statistics] - a[statistics])
-            .slice(0, 5);
-        };
-      },
-      topScorers() {
-        return this.getTopPlayers('goals');
-      },
-      topAssists() {
-        return this.getTopPlayers('assists');
-      },
-      topYellowCards() {
-        return this.getTopPlayers('yellow_cards');
-      },
-      topRedCards() {
-        return this.getTopPlayers('red_cards');
-      },
-      sortedTeams() {
-        return this.teams.slice().sort((a, b) => {
-            return this.calculatePoints(b) - this.calculatePoints(a);
-        });
-    }
-      
+    topScorers() {
+      return this.getTopPlayers('goals');
     },
-    data() {
-        return {
-          showComparison: false,
-          playersChosen: false,
-          playerOne: {},
-          playerTwo: {},
-          teams: [], 
-          teamNews: [],
-          selectedTeam: null
-           
-        };
-      },
-
-      mounted() {
-        this.fetchData();
+    topAssists() {
+      return this.getTopPlayers('assists');
+    },
+    topYellowCards() {
+      return this.getTopPlayers('yellow_cards');
+    },
+    topRedCards() {
+      return this.getTopPlayers('red_cards');
+    },
+    sortedTeams() {
+      return this.teams.slice().sort((a, b) => {
+        return this.calculatePoints(b) - this.calculatePoints(a);
+      });
     }
-      
-    }).mount('#app');
+  },
+  data() {
+    return {
+      showComparison: false,
+      playersChosen: false,
+      playerOne: {},
+      playerTwo: {},
+      teams: [],
+      teamNews: [],
+      selectedTeam: null
+    };
+  },
+  mounted() {
+    this.fetchData();
+  }
+}).mount('#app');
