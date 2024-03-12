@@ -66,6 +66,18 @@ Vue.createApp({
    
    },
 
+   showHistory(team) {
+    if (this.selectedTeam === team) {
+      
+        this.selectedTeam = null;
+    } else {
+        
+        this.selectedTeam = team;
+    }
+},
+    hideHistory() {
+    this.selectedTeam = null;
+    }
 
     },
     computed: {
@@ -108,6 +120,7 @@ Vue.createApp({
           playerTwo: {},
           teams: [], 
           teamNews: [],
+          selectedTeam: null
            
         };
       },

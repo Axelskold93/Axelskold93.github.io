@@ -30,6 +30,16 @@ header {
 #heading {
     margin-left: 70px;
 }
+
+.history-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 50%;
+    
+}
 #team-icons {
     display: flex;
     flex-direction: row;
@@ -216,6 +226,8 @@ main {
     border-bottom: 1px solid #ccc;
     
 }
+
+
 
 
 

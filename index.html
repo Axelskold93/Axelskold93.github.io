@@ -15,10 +15,17 @@
                 <h1 id="heading">FootFantasy</h1>
             </header>
             <div id="team-icons">
-            <div v-for="team in teams">
-                <img :src="team.icon" class="team-icon">
-                <p id="team-name">{{team.name}}</p>
+                <div v-for="team in teams">
+                    <a @click="showHistory(team)">
+                        <img :src="team.icon" class="team-icon">
+                        <p id="team-name">{{ team.name }}</p>
+                    </a>
                 </div>
+            </div>
+            <div>
+                <div class="history-box" v-if="selectedTeam" @click="hideHistory">
+                    <em><p>{{ selectedTeam.history }}</p></em>
+                    </div>
             </div>
             <main>
                 <article id="league-standings">
