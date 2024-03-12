@@ -88,6 +88,9 @@ main {
 #league-standings td {
     border-bottom: 1px solid #ccc;
 }
+#points {
+    font-weight: bold;
+}
 .table-icon {
     width: 15px;
     height: auto;
@@ -232,10 +235,8 @@ main {
 
 
 footer {
-    
-    justify-content: space-evenly;
-    width: 100%;
-    flex: 1;
+   text-align: center;
+
 }
 .highlight {
    background-color: green;
@@ -263,17 +264,17 @@ footer {
     
     
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     main {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 2px;
     }
     table td, table th {
         font-size: 10px;
         flex-wrap: wrap;
         padding: 0; 
-        margin: 0; 
+        margin: 2px; 
     }
     .table-icon {
         max-height: 10px;
