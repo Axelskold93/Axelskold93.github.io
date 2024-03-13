@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fantasy football league standings player stats and compare players">
     <title>FootballApp</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -11,7 +12,6 @@
 
 <body>
     <div id="app">
-
         <header>
             <h1 id="heading">FootFantasy</h1>
         </header>
@@ -50,7 +50,7 @@
                     </thead>
                     <tbody>
                         <tr v-for="(team, index) in sortedTeams">
-                            <td>{{index + 1}}</td>
+                            <td>{{ index + 1 }}</td>
                             <td>
                                 <img :src="team.icon" alt="Team Icon" class="table-icon">
                                 {{ team.name }}
@@ -188,8 +188,8 @@
                 </ul>
                 <div id="chosen-players">
                     <h3>Chosen players:</h3>
-                    <p>Player One: {{ playerOne.name }}</p>
-                    <p>Player Two: {{ playerTwo.name }}</p>
+                    <p id="player-one">Player One: {{ playerOne.name }}</p>
+                    <p id="player-two">Player Two: {{ playerTwo.name }}</p>
                 </div>
                 <button id="compare" @click="toggleComparison(); hideAllPlayers(); playersChosen = true"
                     v-bind:disabled="!playersChosen || comparisonMade">Compare</button>
@@ -217,10 +217,11 @@
                                         :class="{ highlight: playerOne.clean_sheets > playerTwo.clean_sheets }">
                                         {{ playerOne.clean_sheets }}
                                     </td>
-                                    <td :class="{ highlight: playerOne.goals > playerTwo.goals }">{{ playerOne.goals }}
+                                    <td id="player-one-goals" :class="{ highlight: playerOne.goals > playerTwo.goals }">
+                                        {{ playerOne.goals }}
                                     </td>
-                                    <td :class="{ highlight: playerOne.assists > playerTwo.assists }">{{
-                                        playerOne.assists }}</td>
+                                    <td :class="{ highlight: playerOne.assists > playerTwo.assists }">
+                                        {{ playerOne.assists }}</td>
                                     <td>{{ playerOne.yellow_cards }}</td>
                                     <td>{{ playerOne.red_cards }}</td>
                                 </tr>
@@ -248,7 +249,8 @@
                                         :class="{ highlight: playerTwo.clean_sheets > playerOne.clean_sheets }">
                                         {{ playerTwo.clean_sheets }}
                                     </td>
-                                    <td :class="{ highlight: playerTwo.goals > playerOne.goals }">{{ playerTwo.goals }}
+                                    <td id="player-two-goals" :class="{ highlight: playerTwo.goals > playerOne.goals }">
+                                        {{ playerTwo.goals }}
                                     </td>
                                     <td :class="{ highlight: playerTwo.assists > playerOne.assists }">{{
                                         playerTwo.assists }}</td>
@@ -269,8 +271,6 @@
             <p>Made by Axel & Gabriel</p>
         </footer>
     </div>
-
-
     </div>
     </div>
 </body>
