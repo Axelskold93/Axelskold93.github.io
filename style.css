@@ -151,18 +151,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     align-items: flex-start;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-}
-
-.player-one table,
-.player-two table {
-    margin: 15px;
-    padding: 5px;
-    text-align: center;
-
+    
 
 }
 
@@ -177,7 +169,7 @@ main {
     margin: 10px;
     padding: 5px;
     max-width: 500px;
-    max-height: 400px;
+    height: 200px;
 
 }
 
