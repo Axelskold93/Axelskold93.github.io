@@ -16,7 +16,7 @@
         {
           "name": "Grand Admiral Thrawn",
           "position": "Goalkeeper",
-          "bio": "Grand Admiral Thrawn is a highly skilled goalkeeper renowned for his exceptional strategic thinking and tactical prowess on the field. With a keen eye for detail and an unmatched ability to anticipate his opponents' moves, Thrawn has become a legend in the sport. His disciplined approach, coupled with his calm demeanor under pressure, makes him a formidable presence in the goalmouth. Off the field, Thrawn is known for his dedication to perfection and his relentless pursuit of excellence, making him a role model for aspiring players everywhere.",
+          "bio": "Grand Admiral Thrawn, a highly skilled goalkeeper celebrated for his strategic prowess and tactical brilliance on the field. Renowned for his exceptional anticipation and calm demeanor under pressure, Thrawn has become a legend in the sport. Off the field, his dedication to perfection and relentless pursuit of excellence make him a role model for aspiring players everywhere.",
           "clean_sheets": 5,
           "goals": 0,
           "assists": 0,
@@ -26,7 +26,7 @@
         {
           "name": "Grand Moff Tarkin",
           "position": "Defender",
-          "bio": "Grand Moff Tarkin is a stalwart defender known for his unwavering resolve and commanding presence on the field. With a reputation for unyielding defense and tactical brilliance, Tarkin is a formidable force in thwarting opposing attacks. His strategic mind and ironclad discipline instill confidence in his teammates and strike fear into the hearts of his adversaries. Off the field, Tarkin is respected for his leadership qualities and dedication to upholding the highest standards of sportsmanship and integrity.",
+          "bio": "Grand Moff Tarkin is a stalwart defender celebrated for his unwavering resolve and commanding presence on the field. With a reputation for unyielding defense and tactical brilliance, he strikes fear into adversaries and instills confidence in teammates. Off the field, Tarkin is revered for his leadership and commitment to sportsmanship.",
           "goals": 3,
           "assists": 2,
           "yellow_cards": 2,
@@ -35,7 +35,7 @@
         {
           "name": "Moff Gideon",
           "position": "Defender",
-          "bio": "Moff Gideon, a versatile defender with a commanding presence, is renowned for his tactical prowess and relentless determination on the field. With a keen eye for reading the game and an imposing physical presence, Gideon is a formidable force in thwarting opponent attacks and marshaling the defensive line. His strategic acumen, coupled with exceptional leadership skills, inspires confidence in his teammates and strikes fear into the hearts of adversaries. Off the field, Gideon is known for his unwavering commitment to excellence and his dedication to the principles of honor and sportsmanship.",
+          "bio": "Moff Gideon, a versatile defender renowned for his tactical brilliance and relentless determination on the field. With exceptional leadership and an imposing physical presence, he marshals the defensive line and strikes fear into adversaries. Off the field, Gideon is dedicated to excellence and upholds the principles of honor and sportsmanship.",
           "goals": 2,
           "assists": 1,
           "yellow_cards": 3,
@@ -44,7 +44,7 @@
         {
           "name": "Darth Sidious",
           "position": "Midfielder",
-          "bio": "Darth Sidious, the enigmatic midfielder, possesses an aura of dark mystique that instills fear and uncertainty in his opponents. With unparalleled agility and cunning, Sidious maneuvers through the midfield with calculated precision, orchestrating plays with deceptive ease. His mastery of the Force grants him an edge on the pitch, allowing him to anticipate movements and outmaneuver adversaries effortlessly. Beyond his formidable skills on the field, Sidious is a figure shrouded in secrecy, his true motives and ambitions obscured behind a facade of darkness. His presence on the pitch commands respect and strikes fear into the hearts of all who dare to oppose him.",
+          "bio": "Darth Sidious, the enigmatic midfielder, commands the pitch with a dark mystique that strikes fear into opponents. With unparalleled agility and cunning, he orchestrates plays with deceptive ease, aided by his mastery of the Force. Beyond his formidable skills, Sidious remains shrouded in secrecy, his true motives obscured behind a facade of darkness. His presence commands respect and instills fear in all who oppose him.",
           "goals": 7,
           "assists": 3,
           "yellow_cards": 7,
@@ -53,7 +53,7 @@
         {
           "name": "Director Krennic",
           "position": "Midfielder",
-          "bio": "Director Orson Krennic, a formidable midfielder, is known for his relentless pursuit of excellence and unyielding ambition on the pitch. With a commanding presence and sharp tactical mind, Krennic orchestrates plays with precision and finesse, leading his team with unwavering determination. His strategic prowess and ability to adapt to any situation make him a formidable force on the field. Behind his composed exterior lies a fierce desire for success and recognition, driving him to push himself and his teammates to their limits. Krennic's leadership and dedication inspire both fear and respect among his peers, cementing his legacy as a true midfield maestro.",
+          "bio": "Director Orson Krennic, a formidable midfielder, commands with relentless ambition and unwavering determination. His precision and strategic prowess make him a force on the field, driving his team to success. Krennic's leadership inspires fear and respect, solidifying his legacy as a true midfield maestro.",
           "goals": 4,
           "assists": 6,
           "yellow_cards": 1,
@@ -62,7 +62,7 @@
         {
           "name": "Dave the Stormtrooper",
           "position": "Forward",
-          "bio": "Dave the Stormtrooper, a dynamic forward, brings a unique blend of determination and humor to the field. Despite the challenges of his position, Dave's unwavering spirit and infectious enthusiasm never falter. With each match, he strives to improve his skills and make his mark on the game, embodying the resilience and perseverance of the underdog. Off the field, Dave's cheerful demeanor and lighthearted personality make him a beloved figure among fans and teammates alike. Though his aim may sometimes miss the mark, Dave's passion for the game and camaraderie with his fellow players make him an invaluable asset to any team.",
+          "bio": "Dave the Stormtrooper, a dynamic forward, brings determination and humor to the field. Despite challenges, his unwavering spirit and infectious enthusiasm shine. Dave embodies the resilience of the underdog, constantly improving and making his mark on the game. Off the field, his cheerful demeanor and lighthearted personality make him beloved by fans and teammates. Though his aim may falter, Dave's passion and camaraderie make him an invaluable asset to any team.",
           "goals": 4,
           "assists": 14,
           "yellow_cards": 1,
@@ -71,7 +71,7 @@
         {
           "name": "Darth Vader",
           "position": "Forward",
-          "bio": "Darth Vader, a formidable forward, commands the pitch with an imposing presence and unparalleled skill. His mastery of the dark arts of soccer is matched only by his ruthless determination to achieve victory. With each stride, Vader strikes fear into the hearts of his opponents, using his power and agility to dominate the game. Off the field, his enigmatic aura and mysterious past only add to his legend, making him a figure of intrigue and respect among fans and teammates alike. Though his path may be shrouded in darkness, Darth Vader's passion for the sport burns bright, driving him ever forward in pursuit of glory.",
+          "bio": "Darth Vader, a formidable forward, dominates the pitch with imposing presence and unparalleled skill. His ruthless determination for victory strikes fear into opponents as he uses power and agility to dominate. Off-field, his enigmatic aura and mysterious past add to his legend, earning respect and intrigue. Despite his path shrouded in darkness, Vader's passion for the sport burns bright, propelling him toward glory.",
           "goals": 9,
           "assists": 2,
           "yellow_cards": 2,
@@ -133,7 +133,7 @@
         {
           "name": "Han Solo",
           "position": "Midfielder",
-          "bio": "Han Solo, the daring and resourceful midfielder, epitomizes the spirit of adventure on the field. With his quick reflexes and sharp instincts, Han navigates through opponents with ease, making bold moves and delivering precise passes. Renowned for his charisma and swagger, Han brings a sense of excitement to every match, thrilling fans with his fearless style of play. Whether leading his team on daring counterattacks or executing clutch plays in crucial moments, Han Solo is always ready to make a mark on the game.",
+          "bio": "Han Solo, the daring and resourceful midfielder, embodies adventure on the field. With quick reflexes and sharp instincts, he navigates opponents effortlessly, delivering precise passes and making bold moves. Renowned for his charisma and swagger, Han thrills fans with his fearless style of play, leading daring counterattacks and executing clutch plays. Always ready to make a mark on the game, Han Solo brings excitement to every match.",
           "goals": 4,
           "assists": 4,
           "yellow_cards": 2,
@@ -142,7 +142,7 @@
         {
           "name": "Luke Skywalker",
           "position": "Forward",
-          "bio": "Luke Skywalker, the dynamic forward, possesses a rare combination of skill, speed, and determination. With a natural talent for scoring goals, Luke electrifies the crowd with his acrobatic finishes and uncanny ability to find the back of the net. Beyond his impressive athleticism, Luke's unwavering commitment to his team and his unwavering belief in the power of teamwork inspire those around him. Whether soaring through the air for a header or dribbling past defenders with Jedi-like precision, Luke Skywalker is a force to be reckoned with on the soccer field.",
+          "bio": "Luke Skywalker, the dynamic forward, possesses a rare blend of skill, speed, and determination. With a natural talent for scoring goals, he electrifies the crowd with acrobatic finishes and precision shots. Beyond his athleticism, Luke's unwavering commitment to teamwork inspires those around him. Whether soaring for headers or dribbling with Jedi-like precision, he is a force to be reckoned with on the soccer field.",
           "goals": 10,
           "assists": 9,
           "yellow_cards": 2,
@@ -151,7 +151,7 @@
         {
           "name": "Admiral Ackbar",
           "position": "Forward",
-          "bio": "Admiral Ackbar, known for his strategic brilliance and leadership, brings a tactical edge to the forward position. With a keen eye for openings and an innate sense of timing, Ackbar navigates the field with precision, orchestrating attacks and exploiting opponents' weaknesses. His ability to anticipate plays and make split-second decisions makes him a formidable presence in the attacking third. Ackbar's command on the field inspires confidence in his teammates and strikes fear into the hearts of his adversaries. With him leading the charge, victory is always within reach.",
+          "bio": "Admiral Ackbar, revered for his strategic brilliance and leadership, adds a tactical edge to the forward position. With precision and timing, he navigates the field, orchestrating attacks and exploiting opponents' weaknesses. His ability to anticipate plays makes him formidable in the attacking third, inspiring confidence in teammates and striking fear into adversaries. With Ackbar leading, victory is always within reach.",
           "goals": 5,
           "assists": 7,
           "yellow_cards": 2,
@@ -174,7 +174,7 @@
         {
           "name": "Captain America",
           "position": "Goalkeeper",
-          "bio": "Captain America, known for his unwavering courage and unyielding determination, assumes the role of goalkeeper with honor and integrity. His indomitable spirit and keen sense of justice make him a stalwart defender of the goal, protecting it with unwavering resolve. Captain America's exceptional athleticism and keen strategic mind allow him to anticipate opponents' moves and react with lightning-fast reflexes. Whether diving to make a crucial save or commanding his defense with authority, Captain America embodies the ideals of teamwork, sacrifice, and heroism. With him guarding the goal, the team can trust in his unwavering dedication to defend their fortress.",
+          "bio": "Captain America, known for courage and determination, defends the goal with honor. His athleticism and strategic insight make him a stalwart protector, embodying teamwork and heroism. With him guarding the goal, the team trusts in his unwavering dedication.",
           "clean_sheets": 4,
           "goals": 0,
           "assists": 0,
@@ -184,7 +184,7 @@
         {
           "name": "Hulk",
           "position": "Defender",
-          "bio": "The Hulk, renowned for his immense strength and unstoppable resilience, takes on the role of defender with unmatched power and ferocity. His towering presence on the field strikes fear into the hearts of opponents, as they face the formidable challenge of bypassing his formidable defense. With each thunderous tackle and bone-crushing block, the Hulk showcases his raw power and indomitable spirit, ensuring that no adversary can breach his defensive line easily. Despite his intimidating exterior, the Hulk possesses a heart of gold, fiercely loyal to his teammates and unwavering in his commitment to protect the goal at all costs. With the Hulk as their defender, the team can rest assured that their backline is fortified by the strongest guardian imaginable.",
+          "bio": "The Hulk, known for immense strength and resilience, defends with unmatched power and ferocity. His towering presence on the field strikes fear into opponents, showcasing raw power and indomitable spirit. Despite his intimidating exterior, the Hulk is fiercely loyal to teammates and unwavering in his commitment to protect the goal. With him as defender, the team is fortified by the strongest guardian imaginable.",
           "goals": 2,
           "assists": 2,
           "yellow_cards": 2,
@@ -193,7 +193,7 @@
         {
           "name": "Thor",
           "position": "Defender",
-          "bio": "Thor, the God of Thunder, brings his mighty presence to the field as a defender, wielding his enchanted hammer, Mjolnir, with unparalleled skill and strength. As a guardian of the goal, Thor combines his godly powers with tactical prowess, ensuring that no opponent can breach his defensive line. With lightning crackling in his wake, Thor commands the field with authority, inspiring his teammates to greatness and striking fear into the hearts of adversaries. His unwavering dedication to justice and honor drives him to defend the goal with unwavering resolve, making him an invaluable asset to any team. With Thor as their defender, the team can face any challenge with confidence, knowing that they have the power of a god protecting their goal.",
+          "bio": "Thor, the God of Thunder, defends with his mighty presence, wielding Mjolnir with unparalleled skill. Combining godly powers with tactical prowess, he ensures no opponent breaches his defensive line. With lightning crackling, Thor inspires greatness in teammates and strikes fear into adversaries. His dedication to justice and honor drives him to defend with unwavering resolve, making him invaluable to any team. With Thor guarding the goal, the team faces challenges with confidence, protected by the power of a god.",
           "goals": 0,
           "assists": 1,
           "yellow_cards": 5,
@@ -202,7 +202,7 @@
         {
           "name": "Black Widow",
           "position": "Midfielder",
-          "bio": "Black Widow, the master spy and elite tactician, brings her unparalleled skills to the midfield, where her agility, intelligence, and strategic prowess shine brightest. Trained from a young age in the arts of combat and espionage, Black Widow navigates the field with grace and precision, outmaneuvering opponents and orchestrating plays with deadly efficiency. Her keen senses and quick reflexes make her a formidable presence in the midfield, capable of intercepting passes, creating scoring opportunities, and dictating the flow of the game. Behind her enigmatic facade lies a fierce determination and unyielding resolve, driving her to excel in every aspect of the game. With Black Widow on the midfield, the team gains a decisive advantage, as they harness the power of one of the world's most skilled and formidable athletes.",
+          "bio": "Black Widow, the master spy and elite tactician, dominates the midfield with agility and strategic brilliance. Trained in combat and espionage, she orchestrates plays with deadly efficiency, creating scoring opportunities and intercepting passes. With her fierce determination, she excels in every aspect of the game, giving the team a decisive advantage.",
           "goals": 2,
           "assists": 8,
           "yellow_cards": 0,
@@ -211,7 +211,7 @@
         {
           "name": "Scarlet Witch",
           "position": "Midfielder",
-          "bio": "Scarlet Witch, the master of chaos magic, commands the midfield with her mystical abilities and otherworldly talents. Born with incredible powers, Scarlet Witch possesses the unique ability to manipulate reality itself, bending the fabric of space and time to her will. As a midfielder, she channels her formidable magic to control the flow of the game, altering the course of events with a mere thought. With her telekinetic powers, she can effortlessly control the trajectory of the ball, sending it soaring past defenders and into the back of the net with uncanny precision. Scarlet Witch's presence on the field is both mesmerizing and unpredictable, as she weaves spells and incantations to confound her opponents and lead her team to victory. With her unwavering determination and indomitable spirit, Scarlet Witch stands as a force to be reckoned with, a true master of the midfield and a beacon of hope for her teammates.",
+          "bio": "Scarlet Witch, master of chaos magic, dominates the midfield with her otherworldly talents. With the power to manipulate reality, she controls the game effortlessly, guiding the ball past defenders with precision. Unpredictable and mesmerizing, she leads her team to victory with unwavering determination.",
           "goals": 4,
           "assists": 1,
           "yellow_cards": 3,
@@ -252,7 +252,7 @@
         {
           "name": "Mouth of Sauron",
           "position": "Goalkeeper",
-          "bio": "Mouth of Sauron guards the goal with an ominous presence, embodying fear and intimidation. With his dark armor and sinister demeanor, he instills dread in opposing strikers. His keen reflexes and strategic mind make him a formidable last line of defense, deflecting shots with eerie precision. Though shrouded in mystery, his loyalty to Sauron's forces is unwavering, driving him to protect the net at any cost. As the gatekeeper of darkness, he stands resolute, ready to repel any threat to his team's goal.",
+          "bio": "Mouth of Sauron guards the goal with an ominous presence, instilling fear in opposing strikers with his dark armor and sinister demeanor. His keen reflexes and strategic mind make him a formidable last line of defense, deflecting shots with eerie precision. Loyalty to Sauron's forces drives him to protect the net at any cost. As the gatekeeper of darkness, he stands resolute, ready to repel any threat to his team's goal.",
           "clean_sheets": 3,
           "goals": 0,
           "assists": 0,
@@ -262,7 +262,7 @@
         {
           "name": "Witch-King of Angmar",
           "position": "Defender",
-          "bio": "The Witch-King of Angmar, a stalwart defender, commands the battlefield with an aura of dread and power. Clad in dark armor and wielding a formidable weapon, he strikes fear into the hearts of his adversaries. With unmatched strength and resilience, he stands firm against enemy attacks, thwarting their advances with calculated precision. As a servant of the Dark Lord, the Witch-King is bound by his oath to defend his realm at all costs, inspiring his teammates with his unwavering dedication. His mere presence on the field strikes terror into the opposition, making him a formidable force to be reckoned with.",
+          "bio": "The Witch-King of Angmar, a stalwart defender, commands the battlefield with dread and power. Clad in dark armor and wielding a formidable weapon, he strikes fear into adversaries. With unmatched strength and resilience, he thwarts enemy advances with precision. Bound by his oath to defend his realm, he inspires teammates with unwavering dedication. His presence strikes terror into the opposition, making him a formidable force.",
           "goals": 1,
           "assists": 2,
           "yellow_cards": 2,
@@ -271,7 +271,7 @@
         {
           "name": "Lurtz",
           "position": "Defender",
-          "bio": "Lurtz, a formidable defender, dominates the field with his imposing stature and ruthless efficiency. Born from the darkness of Isengard, he is a relentless warrior who strikes fear into the hearts of his foes. With his keen senses and unmatched combat skills, Lurtz stands as a bulwark against opposing offenses, using his strength and agility to thwart attacks and protect his team's goal. His loyalty to his master, Saruman, drives him to excel on the field, inspiring fear and respect in equal measure. As a defender, Lurtz embodies the relentless spirit of his orcish brethren, willing to sacrifice everything to secure victory for his team",
+          "bio": "Lurtz, a formidable defender, dominates the field with imposing stature and ruthless efficiency. Born from Isengard's darkness, he strikes fear into foes with unmatched combat skills. As a bulwark against offenses, Lurtz uses strength and agility to protect his team's goal. Loyalty to Saruman drives him to excel, inspiring fear and respect. He embodies the relentless spirit of orcs, willing to sacrifice all for victory.",
           "goals": 0,
           "assists": 1,
           "yellow_cards": 3,
@@ -280,7 +280,7 @@
         {
           "name": "Balrog of Moria",
           "position": "Midfielder",
-          "bio": "The Balrog of Moria, a fierce and formidable midfielder, commands the field with its immense power and fiery presence. Emerging from the depths of Khazad-dûm, this ancient demon wields flames and shadow to dominate the pitch. With each stride, the Balrog engulfs opponents in flames, leaving a trail of destruction in its wake. Its towering figure strikes fear into the hearts of adversaries, while its dark aura inspires awe and reverence among teammates. As a midfielder, the Balrog channels its infernal might to control the flow of play, unleashing devastating attacks and defending with unmatched ferocity. With a relentless pursuit of victory, the Balrog embodies the raw power and indomitable will of the forces of darkness, ready to crush any opposition that dares to challenge its supremacy on the field.",
+          "bio": "The Balrog of Moria, a fierce midfielder, dominates with immense power and fiery presence. Emerging from Khazad-dûm, it engulfs opponents in destruction, inspiring fear and awe. With relentless pursuit of victory, it embodies the forces of darkness, ready to crush any opposition.",
           "goals": 3,
           "assists": 3,
           "yellow_cards": 1,
@@ -289,7 +289,7 @@
         {
           "name": "Saruman",
           "position": "Midfielder",
-          "bio": "Saruman, the cunning and enigmatic midfielder, commands the pitch with his strategic brilliance and mystical prowess. With a mind as sharp as Orthanc's spire, Saruman orchestrates plays with calculated precision, manipulating the flow of the game to his advantage. Gifted with knowledge of both arcane arts and tactical maneuvers, he weaves spells of confusion and deception, leaving opponents bewildered and vulnerable to his team's attacks. As a master of persuasion and diplomacy, Saruman inspires loyalty and cohesion among his teammates, forging them into a formidable force united under his leadership. With his gaze fixed on victory, Saruman seeks to bend the outcome of every match to his will, ensuring that his team emerges triumphant in their quest for glory.",
+          "bio": "Saruman, the cunning midfielder, commands with strategic brilliance and mystical prowess. Orchestrating plays with precision, he manipulates the game to his advantage. Gifted in arcane arts and tactics, he confuses opponents, leaving them vulnerable to his team's attacks. Master of persuasion, Saruman inspires loyalty and cohesion, leading his team to triumph with unwavering determination.",
           "goals": 4,
           "assists": 1,
           "yellow_cards": 3,
@@ -298,7 +298,7 @@
         {
           "name": "The Dark Lord Sauron",
           "position": "Forward",
-          "bio": "The Dark Lord Sauron, a menacing force on the soccer pitch, dominates as a relentless forward with his overwhelming power and unmatched ambition. Towering over his opponents like the ominous shadow of Barad-dûr, Sauron instills fear with every stride, his fiery gaze piercing through defenses like a flaming arrow. With a relentless hunger for victory, he channels his dark energy into every play, driving his team forward with unyielding determination. Possessing unrivaled strength and agility, Sauron strikes fear into the hearts of defenders, unleashing thunderous shots that shake the very foundations of the field. As the embodiment of darkness and domination, he leads his team with an iron will, commanding them to conquer all who stand in their path. With each goal he scores, Sauron heralds the triumph of darkness, casting a shadow that looms over the soccer realm, forever altering the course of the game.",
+          "bio": "The Dark Lord Sauron, a menacing force as a relentless forward, dominates the pitch with overwhelming power and ambition. Like the shadow of Barad-dûr, he instills fear with every stride and pierces defenses with his fiery gaze. With unyielding determination, he drives his team forward, unleashing thunderous shots that shake the field. As the embodiment of darkness, he leads with an iron will, commanding conquest. With each goal, Sauron heralds the triumph of darkness, forever altering the game's course.",
           "goals": 10,
           "assists": 9,
           "yellow_cards": 2,
@@ -307,7 +307,7 @@
         {
           "name": "Azog the Defiler",
           "position": "Forward",
-          "bio": "Azog the Defiler dominates the forward position with his sheer strength and relentless drive, striking fear into defenders with each thunderous shot on goal. His towering presence and ruthless determination make him a formidable force on the soccer field, leaving opponents scrambling to contain his relentless attacks. With every goal he scores, Azog solidifies his reputation as a fearsome striker, driving his team forward with unmatched ferocity and determination.",
+          "bio": "Azog the Defiler dominates as a forward with sheer strength and relentless drive, striking fear with each thunderous shot on goal. His towering presence and ruthless determination make him formidable, leaving opponents scrambling to contain his attacks. With every goal, Azog solidifies his reputation, driving his team forward with unmatched ferocity.",
           "goals": 9,
           "assists": 12,
           "yellow_cards": 1,
@@ -340,7 +340,7 @@
         {
           "name": "Boromir",
           "position": "Defender",
-          "bio": "Boromir, the valiant defender of Gondor, brings strength and determination to the backline as he stands firm against opposing attackers. With his unyielding resolve and tactical insight, Boromir shields his teammates from danger, embodying the spirit of courage and loyalty on the soccer pitch. As a stalwart guardian of his realm and his comrades, Boromir's presence inspires unity and resilience, instilling hope in the face of adversity. With his unwavering commitment to defend his goal at all costs, Boromir proves himself to be a formidable force in the defense, ready to confront any challenge that comes his way.",
+          "bio": "Boromir, the valiant defender of Gondor, brings strength and determination to the backline as he stands firm against attackers. With unwavering resolve and tactical insight, he shields teammates, embodying courage and loyalty on the pitch. Inspiring unity and resilience, Boromir instills hope in adversity. With unwavering commitment to defend at all costs, he proves formidable in defense, ready to confront any challenge.",
           "goals": 1,
           "assists": 2,
           "yellow_cards": 2,
@@ -349,7 +349,7 @@
         {
           "name": "Gimli",
           "position": "Defender",
-          "bio": "Gimli, the stout-hearted defender from the halls of Erebor, stands tall on the soccer pitch with his unmatched resilience and unwavering determination. With his axe in hand and his spirit unbroken, Gimli shields his teammates with unmatched loyalty and valor, embodying the indomitable spirit of the dwarves. As a fierce protector of his goal and his comrades, Gimli's presence inspires courage and camaraderie, rallying his team to stand firm against the fiercest adversaries. With his steadfast commitment to defend with honor and pride, Gimli proves himself to be an immovable force in the defense, ready to face any challenge with unyielding resolve.",
+          "bio": "Gimli, the stout-hearted defender from Erebor, stands tall on the soccer pitch with unmatched resilience and determination. With axe in hand, he shields teammates with loyalty and valor, embodying dwarven spirit. As protector of goal and comrades, Gimli inspires courage and camaraderie, rallying his team against adversaries. With steadfast commitment to defend with honor, he proves an immovable force, ready to face any challenge.",
           "goals": 0,
           "assists": 3,
           "yellow_cards": 2,
@@ -358,7 +358,7 @@
         {
           "name": "Gandalf",
           "position": "Midfielder",
-          "bio": "Gandalf, the revered midfielder, commands the pitch with his unparalleled wisdom and mastery of the game. His presence inspires his teammates, instilling in them the courage and resilience needed to overcome any challenge. With a blend of astute strategy and magical prowess, Gandalf navigates the field with confidence, turning the tide of the game in his team's favor. As a mentor and leader, he imparts invaluable lessons, fostering unity and camaraderie among his comrades. With Gandalf leading the charge, victory is not merely a possibility but a certainty, as he leads his team to glory with unwavering resolve.",
+          "bio": "Gandalf, the revered midfielder, commands with unparalleled wisdom and mastery. His presence inspires teammates, instilling courage and resilience. With astute strategy and magical prowess, Gandalf navigates confidently, turning the game in his team's favor. As mentor and leader, he fosters unity and camaraderie, leading with unwavering resolve toward victory.",
           "goals": 2,
           "assists": 3,
           "yellow_cards": 2,
@@ -367,7 +367,7 @@
         {
           "name": "Frodo",
           "position": "Midfielder",
-          "bio": "Frodo, the agile midfielder, maneuvers through the field with determination and grace. Despite his diminutive stature, Frodo possesses a heart as vast as the Shire and a spirit as resilient as Mithril. With each swift pass and strategic move, Frodo demonstrates his unwavering commitment to his team, proving that true strength lies not in physical prowess but in courage and resilience. Off the field, Frodo's humility and kindness make him a beloved teammate, fostering a sense of camaraderie and unity among the squad. With the ring of victory within reach, Frodo embarks on this epic journey with unwavering determination, ready to conquer any challenge that stands in his team's way.",
+          "bio": "Frodo, the agile midfielder, maneuvers with determination and grace, showcasing courage and resilience. Despite his stature, he proves strength lies in heart and spirit. Off the field, his humility and kindness foster camaraderie among teammates. With victory in sight, Frodo embarks on the journey with unwavering determination, ready to conquer any challenge.",
           "goals": 3,
           "assists": 12,
           "yellow_cards": 1,
@@ -376,7 +376,7 @@
         {
           "name": "Aragorn",
           "position": "Forward",
-          "bio": "Aragorn, the valiant forward, leads his team with unparalleled skill and determination. With each stride across the field, Aragorn embodies the spirit of a true warrior, channeling his royal lineage and years of battle experience into every shot on goal. Blessed with strength, agility, and a keen sense of strategy, Aragorn navigates through defenders with ease, leaving a trail of awe and admiration in his wake. Off the field, Aragorn's leadership and courage inspire his teammates to push beyond their limits, instilling in them the belief that victory is within their grasp. As the final whistle blows, Aragorn stands tall, ready to lead his team to glory and honor, both on the soccer pitch and in the annals of history.",
+          "bio": "Aragorn, the valiant forward, leads with unparalleled skill and determination, embodying the spirit of a true warrior on the field. Blessed with strength, agility, and strategic insight, he navigates through defenders effortlessly, leaving awe in his wake. Off the field, his leadership and courage inspire teammates, instilling belief in victory. As the final whistle blows, Aragorn stands ready to lead his team to glory, both on the pitch and in history.",
           "goals": 5,
           "assists": 7,
           "yellow_cards": 2,
@@ -385,7 +385,7 @@
         {
           "name": "Legolas",
           "position": "Forward",
-          "bio": "Legolas, the swift and agile forward, brings an elven grace to the soccer pitch. With his keen eyesight and unparalleled accuracy, Legolas strikes fear into the hearts of defenders as he effortlessly maneuvers through the opposition. His nimble footwork and lightning-fast reflexes allow him to weave past defenders with ease, leaving them in awe of his remarkable skill. Off the field, Legolas is a beacon of camaraderie and sportsmanship, inspiring his teammates to strive for greatness with his unwavering dedication and humility. As the game unfolds, Legolas stands ready to unleash his unrivaled talent, leading his team to victory with every goal he scores.",
+          "bio": "Legolas, the swift forward, brings elven grace to the pitch, striking fear into defenders with unparalleled accuracy and nimble footwork. Off the field, he inspires teammates with dedication and humility. Ready to lead his team to victory, Legolas unleashes unrivaled talent with every goal.",
           "goals": 16,
           "assists": 0,
           "yellow_cards": 3,
@@ -408,7 +408,7 @@
         {
           "name": "Ned Stark",
           "position": "Goalkeeper",
-          "bio": "Ned Stark, the stalwart guardian of the goal, brings honor and resilience to the soccer field. With his unwavering dedication and tactical prowess, Ned stands as a formidable barrier against opposing strikers. His keen sense of leadership and commitment to his team inspire trust and confidence in his fellow players, instilling a sense of unity and determination on the field. As the last line of defense, Ned's bravery and selflessness shine through, earning him the respect of both teammates and rivals alike. With every save he makes, Ned upholds the values of integrity and duty, embodying the spirit of a true goalkeeper and leading his team to victory with unwavering resolve.",
+          "bio": "Ned Stark, the stalwart goalkeeper, brings honor and resilience to the field. His leadership and commitment inspire unity and determination. With bravery and selflessness, he defends the goal, earning respect from teammates and rivals alike. With every save, he leads his team to victory with unwavering resolve.",
           "clean_sheets": 3,
           "goals": 0,
           "assists": 1,
@@ -454,7 +454,7 @@
         {
           "name": "Catelyn Stark",
           "position": "Forward",
-          "bio": "Catelyn Stark, the dynamic forward, possesses a keen sense of strategy and finesse on the soccer pitch. With her sharp instincts and decisive moves, Catelyn orchestrates plays and capitalizes on scoring opportunities with precision. Her leadership skills and determination inspire her teammates, driving them to push boundaries and excel. As a forward, Catelyn's relentless pursuit of goals and unwavering dedication to her team make her a formidable asset in any match.",
+          "bio": "Catelyn Stark, the dynamic forward, possesses strategy and finesse on the soccer pitch. With sharp instincts, she orchestrates plays and capitalizes on scoring opportunities. Her leadership and determination inspire teammates to excel. Relentless in pursuit ofgoals, Catelyn's dedication makes her a formidable asset in any match.",
           "goals": 8,
           "assists": 4,
           "yellow_cards": 3,
@@ -463,7 +463,7 @@
         {
           "name": "Arya Stark",
           "position": "Forward",
-          "bio": "Arya Stark, the agile and tenacious forward, brings unparalleled speed and agility to the soccer field. With her swift footwork and cunning maneuvers, Arya swiftly navigates through opposing defenses, leaving them bewildered in her wake. Her relentless determination and fierce competitiveness make her a formidable opponent, as she fearlessly takes on challenges and strives for victory. Off the field, Arya's indomitable spirit and unwavering resolve inspire her teammates, driving them to push their limits and achieve greatness. As a forward, Arya's lightning-fast reflexes and sharp instincts make her a true force to be reckoned with, capable of turning the tide of any match in her team's favor.",
+          "bio": "Arya Stark, the agile forward, brings unmatched speed and agility to the field. With swift footwork and fierce determination, she leaves defenders bewildered. Her relentless competitiveness inspires teammates to greatness. With lightning-fast reflexes, Arya is a formidable force, capable of turning the tide of any match.",
           "goals": 8,
           "assists": 3,
           "yellow_cards": 6,
@@ -486,7 +486,7 @@
         {
           "name": "Tyrion Lannister",
           "position": "Goalkeeper",
-          "bio": "Tyrion Lannister, the cunning and strategic goalkeeper, utilizes his intellect and quick thinking to defend the goal with precision and finesse. Despite his stature, Tyrion possesses remarkable agility and reflexes, enabling him to make acrobatic saves that defy expectations. Off the field, Tyrion's wit and charm make him a natural leader, capable of rallying his teammates and boosting morale in the face of adversity. As a goalkeeper, Tyrion's unorthodox methods and unconventional tactics keep opposing strikers guessing, making him a formidable presence between the goalposts. With his sharp mind and unwavering determination, Tyrion is always ready to rise to the challenge and protect his team's goal at all costs.",
+          "bio": "Tyrion Lannister, the cunning goalkeeper, defends with intellect and quick thinking, using precision and finesse. Despite his stature, he displays remarkable agility and reflexes, making acrobatic saves. Off the field, Tyrion's wit and charm rally teammates and boost morale. His unorthodox methods keep strikers guessing, making him formidable. With sharp mind and determination, Tyrion protects his team's goal at all costs.",
           "clean_sheets": 5,
           "goals": 0,
           "assists": 0,
@@ -496,7 +496,7 @@
         {
           "name": "Jamie Lannister",
           "position": "Defender",
-          "bio": "Jaime Lannister, the skilled and resolute defender, brings a combination of finesse and determination to the backline. Renowned for his swordsmanship and tactical prowess, Jaime applies the same level of precision and strategy to his defensive play on the soccer field. Despite his past reputation, Jaime has proven himself to be a reliable and steadfast teammate, always willing to sacrifice for the greater good of the team. Off the field, Jaime's leadership and charisma inspire those around him, fostering a sense of camaraderie and unity among his fellow players. With his unwavering commitment to excellence and his unwavering loyalty to his team, Jaime stands as a stalwart guardian of the defense, ready to thwart any opposing attacks and lead his team to victory.",
+          "bio": "Jaime Lannister, skilled defender, brings finesse and determination to the backline. Renowned for tactical prowess, he's reliable and inspiring, fostering team unity. With unwavering commitment, Jaime leads his team to victory by thwarting opposing attacks.",
           "goals": 1,
           "assists": 0,
           "yellow_cards": 6,
@@ -505,7 +505,7 @@
         {
           "name": "Tywin Lannister",
           "position": "Defender",
-          "bio": "Tywin Lannister, the commanding presence in defense, brings a blend of intelligence and authority to the backline. Known for his strategic acumen and decisive leadership, Tywin orchestrates the defensive line with precision, ensuring that his teammates are organized and prepared for any challenge. Despite his stern demeanor, Tywin's dedication to excellence and his unwavering commitment to victory inspire respect and admiration from his fellow players. Off the field, Tywin's influence extends beyond the game, as he serves as a mentor and role model for younger players, instilling in them the values of discipline and teamwork. With his keen tactical mind and unyielding determination, Tywin stands as a formidable defender, ready to protect his team's goal and lead them to success.",
+          "bio": "Tywin Lannister, commanding presence in defense, brings intelligence and authority to the backline. Renowned for strategic acumen, he ensures readiness for any challenge. His dedication inspires respect. Off the field, he mentors, instilling values of discipline and teamwork. With keen mind and determination, Tywin leads his team to success.",
           "goals": 0,
           "assists": 2,
           "yellow_cards": 2,
@@ -514,7 +514,7 @@
         {
           "name": "Cersei Lannister",
           "position": "Midfielder",
-          "bio": "Cersei Lannister, the midfield maestro, combines grace and cunning on the pitch. With her sharp intellect and calculated moves, Cersei orchestrates the flow of play from the center of the field, dictating the tempo and direction of the game. Her ability to anticipate opponents' actions and exploit their weaknesses makes her a formidable presence in midfield, capable of turning defense into swift counterattacks. Beyond her skill with the ball, Cersei's fierce determination and unwavering ambition drive her to push boundaries and seize every opportunity for victory. Off the field, Cersei's commanding presence and keen insight make her a natural leader, inspiring her teammates to strive for greatness. With her strategic vision and indomitable spirit, Cersei stands ready to lead her team to glory on the soccer pitch.",
+          "bio": "Cersei Lannister, midfield maestro, combines grace and cunning on the pitch. With sharp intellect, she orchestrates play, dictating tempo and direction. Her ability to anticipate opponents makes her formidable, turning defense into swift counterattacks. Beyond skill with the ball, Cersei's determination and ambition drive her to seize victory. Off the field, her presence and insight inspire greatness. With strategic vision and indomitable spirit, Cersei leads her team to glory.",
           "goals": 3, 
           "assists": 3,
           "yellow_cards": 1,
@@ -523,7 +523,7 @@
         {
           "name": "Joffrey Baratheon",
           "position": "Midfielder",
-          "bio": "Joffrey Baratheon, the midfielder with a regal air, brings a mix of arrogance and flair to the pitch. Blessed with natural talent and a royal upbringing, Joffrey's skill on the ball is matched only by his confidence. With his quick feet and sharp instincts, he navigates the midfield with ease, often leaving opponents trailing in his wake. However, Joffrey's penchant for showboating and his volatile temper can sometimes overshadow his undeniable talent, making him a divisive figure on and off the field. Despite his flaws, Joffrey's hunger for success and his desire to prove himself as the best drive him to push his limits and strive for greatness. As he takes to the pitch, Joffrey's eyes are set on glory, determined to leave his mark on the game and claim his rightful place among soccer's elite.",
+          "bio": "Joffrey Baratheon, midfielder with regal air, brings arrogance and flair to the pitch. Blessed with talent and royal upbringing, his confidence matches skill. With quick feet and sharp instincts, he navigates midfield effortlessly. However, showboating and temper can overshadow talent, making him divisive. Despite flaws, hunger for success and desire to prove himself drive him to greatness. Eyes set on glory, Joffrey aims to claim his place among soccer's elite.",
           "goals": 2,
           "assists": 9,
           "yellow_cards": 1,
@@ -532,7 +532,7 @@
         {
           "name": "Tommen Baratheon",
           "position": "Forward",
-          "bio": "Tommen Baratheon, the forward with a gentle demeanor, brings a sense of innocence and purity to the field. Despite his young age, Tommen possesses a natural talent for scoring goals, fueled by his unwavering dedication and love for the game. With his quick reflexes and sharp instincts, he navigates the opposition's defense with ease, often finding himself in the right place at the right time to capitalize on scoring opportunities. Off the field, Tommen's humility and kindness make him a beloved figure among fans and teammates alike, earning him respect both on and off the pitch. As he steps onto the field, Tommen's eyes light up with excitement, ready to showcase his skills and make his mark on the game, all while staying true to his values and principles.",
+          "bio": "Tommen Baratheon, forward with gentle demeanor, brings innocence and purity to the field. Despite youth, possesses natural talent for scoring, fueled by dedication and love for the game. With quick reflexes and sharp instincts, navigates opposition's defense effortlessly. Off the field, humility and kindness earn respect from fans and teammates. Eyes light up with excitement as he steps onto the field, ready to showcase skills and make his mark while staying true to values.",
           "goals": 6,
           "assists": 3,
           "yellow_cards": 2,
@@ -541,7 +541,7 @@
         {
           "name": "Lancel Lannister",
           "position": "Forward",
-          "bio": "Lancel Lannister, the forward known for his agility and determination, brings a fierce competitiveness to the pitch. Despite his slender frame, Lancel possesses remarkable speed and precision, making him a formidable opponent for any defense. With a keen eye for goal and a knack for finding openings in the defense, he's often the catalyst for his team's attacking plays. Off the field, Lancel is known for his dedication to training and his unwavering commitment to his team, earning him admiration from fans and teammates alike. As he takes to the field, Lancel's focus is unwavering, driven by his desire to succeed and lead his team to victory.",
+          "bio": "Lancel Lannister, forward renowned for agility and determination, brings fierce competitiveness to the pitch. Despite slender frame, possesses remarkable speed and precision, making him formidable. With keen eye for goal, often catalyst for team's attacking plays. Off the field, dedication to training and commitment to team earn admiration. As he takes to the field, focus is unwavering, driven by desire to succeed and lead team to victory.",
           "goals": 6,
           "assists": 4,
           "yellow_cards": 2,
@@ -564,7 +564,7 @@
         {
           "name": "Minerva McGonagall",
           "position": "Goalkeeper",
-          "bio": "Minerva McGonagall, the stoic goalkeeper renowned for her exceptional reflexes and unwavering determination, stands as a formidable guardian of the goalposts. With her keen intellect and strategic prowess, she anticipates opposing strikers' moves with precision, thwarting their attempts to score. McGonagall's commanding presence instills confidence in her teammates, inspiring them to perform at their best. Off the field, she is a respected leader, known for her unwavering commitment to excellence and fairness. As she steps onto the pitch, McGonagall's steely resolve and unwavering dedication make her a force to be reckoned with, ready to defend her team's goal with unmatched skill and determination.",
+          "bio": "Minerva McGonagall, stoic goalkeeper with exceptional reflexes, stands as a formidable guardian of the goalposts. Commanding presence inspires teammates. Off the field, respected leader known for commitment to excellence and fairness. Ready to defend her team's goal with unmatched skill and dedication.",
           "clean_sheets": 2,
           "goals": 0,
           "assists": 0,
@@ -574,7 +574,7 @@
         {
           "name": "Ginny Weasley",
           "position": "Defender",
-          "bio": "Ginny Weasley, the fearless defender known for her tenacity and agility, stands as a stalwart guardian of the team's defensive line. With her quick reflexes and strategic mind, she anticipates opposing attackers' moves, intercepting passes and thwarting goal-scoring opportunities. Weasley's determination and leadership inspire confidence in her teammates, rallying them to give their all on the field. Off the pitch, she is admired for her unwavering loyalty and courage, making her a respected figure both on and off the field. As she takes her position on the pitch, Weasley's unwavering resolve and defensive prowess make her a formidable opponent, ready to protect her team's goal with unwavering determination.",
+          "bio": "Ginny Weasley, fearless defender known for tenacity and agility, stands stalwart in guarding the team's defensive line. With quick reflexes and strategic mind, anticipates opposing attackers' moves, thwarting goal-scoring opportunities. Her determination and leadership inspire teammates, rallying them to give their all. Admired for unwavering loyalty and courage on and off the field. With unwavering resolve, Ginny is a formidable opponent, ready to protect her team's goal with determination.",
           "goals": 1,
           "assists": 0,
           "yellow_cards": 4,
@@ -583,7 +583,7 @@
         {
           "name": "Ron Weasley",
           "position": "Defender",
-          "bio": "Ron Weasley, a dependable defender, brings a blend of resilience and determination to the team's defensive lineup. With his keen awareness and tactical prowess, he excels at thwarting opposing attackers and breaking up plays. Weasley's unwavering commitment and loyalty make him a reliable presence on the field, always ready to give his all for the team. Beyond the pitch, his friendly demeanor and unwavering support for his teammates make him a beloved figure in the squad. As he takes his position on the field, Weasley's defensive skill and steadfast resolve make him an invaluable asset, ready to protect the team's goal with unwavering determination.",
+          "bio": "Ron Weasley, dependable defender, brings resilience and determination to the team's defensive lineup. With keen awareness and tactical prowess, excels at thwarting opposing attackers. His unwavering commitment and loyalty make him reliable on the field. Beyond the pitch, his friendly demeanor and support for teammates make him beloved. As he takes position, Ron's defensive skill and steadfast resolve make him invaluable, ready to protect the team's goal with determination.",
           "goals": 0,
           "assists": 1,
           "yellow_cards": 3,
@@ -592,7 +592,7 @@
         {
           "name": "Fred Weasley",
           "position": "Midfielder",
-          "bio": "Fred Weasley, a dynamic midfielder, injects creativity and flair into the team's midfield with his quick wit and clever footwork. Known for his unpredictable playing style and knack for pulling off unexpected maneuvers, Fred keeps opponents guessing and teammates inspired. His infectious energy and playful spirit bring a sense of camaraderie to the squad, fostering a positive atmosphere both on and off the pitch. With his ability to turn the tide of a match with a well-timed pass or a daring shot on goal, Fred adds a crucial dimension to the team's attacking prowess. As he orchestrates plays from the midfield, Fred Weasley's presence is felt across the field, driving the team forward towards victory.",
+          "bio": "Fred Weasley, dynamic midfielder, injects creativity and flair into the team's midfield with quick wit and clever footwork. Known for unpredictable playing style and knack for unexpected maneuvers, keeps opponents guessing and teammates inspired. Infectious energy and playful spirit foster positive atmosphere on and off the pitch. Ability to turn tide of match with well-timed pass or daring shot on goal adds crucial dimension to team's attacking prowess. As he orchestrates plays, Fred drives the team forward towards victory.",
           "goals": 2,
           "assists": 3,
           "yellow_cards": 3,
@@ -601,7 +601,7 @@
         {
           "name": "George Weasley",
           "position": "Midfielder",
-          "bio": "George Weasley, a versatile midfielder, complements his team's playing style with his astute vision and precise passing. His innate understanding of the game allows him to anticipate plays and distribute the ball effectively, dictating the tempo of the match from the midfield. With his creative playmaking abilities and sharp instincts, George often serves as the linchpin of his team's offensive maneuvers, linking up with teammates and orchestrating attacks with finesse. Beyond his on-field contributions, George's unwavering determination and resilient spirit inspire his fellow players, driving them to push their limits and strive for success. Whether it's breaking up opposition plays or engineering scoring opportunities, George Weasley consistently demonstrates his commitment to the team's collective objectives, earning the admiration of fans and teammates alike.",
+          "bio": "George Weasley, versatile midfielder, dictates play with astute vision and precise passing. His creative playmaking and sharp instincts make him a linchpin of the team's offense, inspiring success. Beyond the field, his determination and resilience drive his teammates to excel. George consistently demonstrates commitment to the team's objectives, earning admiration from fans and teammates.",
           "goals": 3,
           "assists": 3,
           "yellow_cards": 6,
@@ -610,7 +610,7 @@
         {
           "name": "Harry Potter",
           "position": "Forward",
-          "bio": "Harry Potter, the lightning-fast forward, electrifies the pitch with his remarkable speed and agility. As the focal point of his team's attack, Harry uses his exceptional athleticism and quick footwork to outmaneuver defenders and create scoring opportunities. With a natural instinct for goal-scoring, he possesses a keen eye for goal and the composure to finish with precision under pressure. Harry's ability to change the course of a match with his dynamic play and decisive finishing makes him a constant threat to opposing defenses. Off the field, his leadership qualities and unwavering determination inspire his teammates, fostering a strong sense of camaraderie and unity within the squad. With his boundless talent and indomitable spirit, Harry Potter embodies the essence of a true footballing wizard, captivating fans and leaving a lasting legacy on the game.",
+          "bio": "Harry Potter, lightning-fast forward, electrifies the pitch with remarkable speed and agility. Focal point of team's attack, he outmaneuvers defenders and creates scoring opportunities with exceptional athleticism and quick footwork. Natural instinct for goal-scoring and composure under pressure make him a constant threat. Off the field, his leadership qualities and determination foster camaraderie and unity within the squad. Harry Potter, a true footballing wizard, leaves a lasting legacy on the game with boundless talent and indomitable spirit.",
           "goals": 5,
           "assists": 4,
           "yellow_cards": 8,
@@ -619,7 +619,7 @@
         {
           "name": "Hermione Granger",
           "position": "Forward",
-          "bio": "Hermione Granger, the forward with an exceptional intellect, brings a unique blend of skill and strategy to the pitch. Renowned for her tactical prowess and quick thinking, Hermione is a master at reading the game and exploiting opponent weaknesses. Her precise passing and deft ball control make her a formidable playmaker, capable of unlocking even the tightest defenses with her insightful through balls and clever movement off the ball. Hermione's relentless work ethic and determination to succeed drive her to constantly improve and push the boundaries of her abilities. Off the field, her leadership qualities and dedication to teamwork inspire her teammates to strive for excellence and work together towards achieving their goals. With her combination of intelligence, skill, and passion for the game, Hermione Granger proves that true greatness knows no bounds on the football pitch.",
+          "bio": "Hermione Granger, forward with exceptional intellect, brings skill and strategy to the pitch. Renowned for tactical prowess, she exploits opponent weaknesses with precise passing and deft ball control, inspiring teammates to excel. With intelligence, skill, and passion, Hermione proves greatness knows no bounds on the football pitch.",
           "goals": 8,
           "assists": 8,
           "yellow_cards": 3,
@@ -642,7 +642,7 @@
         {
           "name": "Vincent Crabbe",
           "position": "Goalkeeper",
-          "bio": "Vincent Crabbe, the imposing figure guarding the goal, is a formidable presence between the posts. With his towering stature and lightning-fast reflexes, Crabbe instills fear in opposition strikers, making it difficult for them to find the back of the net. His commanding presence in the penalty area and ability to anticipate shots make him a reliable last line of defense for his team. Despite his intimidating demeanor on the field, Crabbe is known for his unwavering loyalty to his teammates and his willingness to put his body on the line to keep the opposition at bay. Off the pitch, he is a quiet and reserved individual who leads by example, always putting the team's success above personal glory. With his impressive shot-stopping abilities and commitment to his team, Vincent Crabbe is a vital asset for any squad looking to secure victory on the football pitch.",
+          "bio": "Vincent Crabbe, imposing goalkeeper, strikes fear with his stature and lightning reflexes, a reliable last line of defense. Known for loyalty and commitment, his shot-stopping prowess makes him invaluable for any team seeking victory on the football pitch.",
           "clean_sheets": 3,
           "goals": 0,
           "assists": 0,
@@ -652,7 +652,7 @@
         {
           "name": "Severus Snape",
           "position": "Defender",
-          "bio": "Severus Snape, the enigmatic defender, brings a unique blend of skill and strategy to the backline. With his keen intellect and sharp instincts, Snape anticipates opposition movements with precision, thwarting attacking plays before they even materialize. His mastery of defensive tactics and ability to read the game allow him to neutralize even the most potent offensive threats with ease. Despite his stern demeanor on the field, Snape is a fiercely loyal teammate who always puts the needs of the team above his own. Off the pitch, he is known for his dedication to the sport and his unwavering commitment to excellence, inspiring those around him to strive for greatness. With Severus Snape anchoring the defense, his team can rest assured knowing that their goal is well-protected and victory is within reach.",
+          "bio": "Severus Snape, enigmatic defender, anticipates opposition moves with precision, neutralizing threats with ease. Known for loyalty and commitment, he inspires teammates to strive for greatness, anchoring the defense with unwavering resolve.",
           "goals": 1,
           "assists": 0,
           "yellow_cards": 2,
@@ -720,7 +720,7 @@
         {
           "name": "Loki",
           "position": "Goalkeeper",
-          "bio": "Loki, the cunning goalkeeper, brings his deceptive tactics and quick reflexes to the soccer pitch. Known for his shrewdness and unpredictability, Loki keeps opponents guessing with his strategic maneuvers and ability to outwit even the most skilled strikers. With his mastery of illusions and trickery, he creates an aura of uncertainty that unnerves opposing teams, making him a formidable obstacle in front of the goal. Despite his mischievous nature, Loki's loyalty to his team drives him to protect the net with unwavering determination. As he guards the goal with finesse and flair, Loki proves to be an invaluable asset to his team's defense.",
+          "bio": "Loki, the cunning goalkeeper, keeps opponents guessing with his deceptive tactics and quick reflexes. His mastery of illusions unnerves opposing teams, making him a formidable obstacle in front of the goal. Despite his mischievous nature, Loki's loyalty to his team drives him to protect the net with unwavering determination, proving to be an invaluable asset to his team's defense.",
           "clean_sheets": 2,
           "goals": 0,
           "assists": 0,
@@ -730,7 +730,7 @@
         {
           "name": "Killmonger",
           "position": "Defender",
-          "bio": "Killmonger, the tenacious defender, brings a relentless intensity and fierce determination to the soccer field. Raised in hardship and driven by a thirst for justice, Killmonger embodies resilience and strength in every tackle and interception. With his exceptional athleticism and combat skills, he dominates the defensive line, thwarting opponents' advances with unwavering resolve. Killmonger's unwavering commitment to his teammates and his unyielding spirit make him a formidable presence on the pitch, inspiring those around him to strive for greatness. As he defends with passion and purpose, Killmonger proves to be an indispensable pillar of his team's defense, ready to overcome any challenge that comes his way.",
+          "bio": "Killmonger, the tenacious defender, embodies resilience and strength on the soccer field. With exceptional athleticism and combat skills, he dominates the defensive line, thwarting opponents' advances with unwavering resolve. His unwavering commitment and fierce determination inspire his teammates, making him an indispensable pillar of his team's defense.",
           "goals": 1,
           "assists": 0,
           "yellow_cards": 2,
@@ -739,7 +739,7 @@
         {
           "name": "Gorr the God Butcher",
           "position": "Defender",
-          "bio": "Gorr the God Butcher, a formidable defender, brings unparalleled strength and ferocity to the soccer field. With his relentless determination and unwavering focus, Gorr dominates the defensive line, thwarting opponents' attacks with unmatched skill and precision. Born from tragedy and driven by a thirst for vengeance, Gorr embodies resilience and tenacity in every challenge he faces. His imposing presence and indomitable spirit inspire fear in his adversaries and courage in his teammates. With Gorr on the field, his team can always count on his unwavering commitment and unmatched prowess to defend their goal with unmatched determination.",
+          "bio": "Gorr the God Butcher, a formidable defender, brings unparalleled strength and ferocity to the soccer field. With relentless determination, he dominates the defensive line, thwarting opponents' attacks with unmatched skill. Born from tragedy, Gorr embodies resilience and tenacity, inspiring fear in adversaries and courage in teammates. With Gorr on the field, his team can count on his unwavering commitment to defend their goal with unmatched determination.",
           "goals": 0,
           "assists": 1,
           "yellow_cards": 3,
@@ -748,7 +748,7 @@
         {
           "name": "Thanos",
           "position": "Midfielder",
-          "bio": "Thanos, the mighty midfielder, commands the pitch with unparalleled strength and strategic prowess. Endowed with formidable power and intellect, Thanos dominates the midfield, orchestrating plays with precision and ruthlessness. Driven by a vision of cosmic balance, Thanos possesses an unwavering determination to achieve his goals, both on and off the field. With his indomitable will and unmatched skill, Thanos inspires fear in his opponents and admiration in his teammates. His presence on the pitch instills a sense of inevitability, as he maneuvers through challenges with calculated efficiency. As a master tactician and relentless competitor, Thanos is poised to lead his team to victory, no matter the cost.",
+          "bio": "Thanos, the powerful midfielder, dominates the pitch with strength and strategy. Driven by a vision of balance, he inspires fear in opponents and admiration in teammates. With unmatched skill and determination, Thanos leads his team to victory.",
           "goals": 3,
           "assists": 2,
           "yellow_cards": 2,
@@ -757,7 +757,7 @@
         {
           "name": "Ultron",
           "position": "Midfielder",
-          "bio": "Ultron, the midfield marvel, brings a fusion of advanced technology and unparalleled agility to the pitch. Created with a singular purpose to evolve and conquer, Ultron commands the midfield with ruthless efficiency and unmatched intellect. With lightning-fast reflexes and precision accuracy, Ultron maneuvers through opponents with ease, leaving a trail of destruction in his wake. As an artificial intelligence with a relentless drive for perfection, Ultron adapts to any situation, analyzing the field and orchestrating plays with machine-like precision. Despite his cold and calculating nature, Ultron's presence on the pitch is undeniable, as he leads his team with unwavering determination towards victory.",
+          "bio": "ltron, the midfield marvel, blends advanced technology with agility on the pitch. Commanding with ruthless efficiency, he maneuvers effortlessly and orchestrates plays with precision. Driven by perfection, his determination leads his team to victory.",
           "goals": 2,
           "assists": 8,
           "yellow_cards": 3,
@@ -766,7 +766,7 @@
         {
           "name": "Hela",
           "position": "Forward",
-          "bio": "Hela, the fierce and formidable forward, commands the pitch with her otherworldly strength and deadly prowess. As the Goddess of Death, Hela strikes fear into the hearts of defenders with her relentless attacks and unstoppable determination. With each stride, she exudes an aura of power and dominance, overpowering her opponents with ease. With her lethal combination of speed, agility, and precision, Hela maneuvers past defenders with grace and finesse, leaving a trail of destruction in her wake. As she unleashes her wrath upon the field, Hela proves to be an unstoppable force, leading her team towards victory with unmatched ferocity and determination.",
+          "bio": "Hela, the formidable forward, dominates the pitch with her unmatched strength and lethal prowess. As the Goddess of Death, she strikes fear into defenders, overpowering them with ease. With her speed, agility, and precision, Hela maneuvers past opponents with grace, leaving a trail of destruction. Her relentless determination leads her team to victory with unmatched ferocity.",
           "goals": 6,
           "assists": 4,
           "yellow_cards": 2,
@@ -775,7 +775,7 @@
         {
           "name": "The Winter Soldier",
           "position": "Forward",
-          "bio": "The Winter Soldier, a formidable forward on the field, embodies the essence of precision and power. With a mysterious past shrouded in shadows, he brings an air of intrigue and danger to the game. As a master of combat and strategy, The Winter Soldier maneuvers through defenses with calculated precision, striking fear into the hearts of his opponents. His relentless pursuit of victory is fueled by a sense of duty and purpose, driving him to push beyond his limits to secure success for his team. With each goal he scores, The Winter Soldier cements his legacy as a force to be reckoned with on the soccer pitch, leaving an indelible mark on the game and inspiring awe in all who witness his prowess.",
+          "bio": "The Winter Soldier, a powerful forward, blends precision and strength on the field. With a mysterious past, he brings intrigue to the game. Mastering combat and strategy, he maneuvers through defenses with calculated precision, instilling fear in opponents. Fueled by duty and purpose, he pushes boundaries for his team's success. With each goal, he cements his legacy, inspiring awe on the soccer pitch.",
           "goals": 8,
           "assists": 5,
           "yellow_cards": 6,
